@@ -1,0 +1,29 @@
+label: Features
+description: A title above a row of feature cards, three per row.
+icon: grid_view
+picker_preview:
+  text:
+    - Features
+  icon:
+    - grid_view
+preview:
+  text:
+    - key: title
+    - Features
+  icon:
+    - grid_view
+value:
+  _type: features_section
+  _uuid:
+  title:
+  features: []
+_inputs:
+  title:
+    type: text
+    cascade: false
+    label: Title
+  features:
+    type: array
+    label: Features
+    options:
+      structures: _structures.features

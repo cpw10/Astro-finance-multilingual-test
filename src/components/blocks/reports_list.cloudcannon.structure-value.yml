@@ -1,0 +1,32 @@
+label: All reports
+description: A page header followed by every report, newest first.
+icon: view_list
+picker_preview:
+  text:
+    - All reports
+  icon:
+    - view_list
+preview:
+  text:
+    - key: title
+    - All reports
+  image:
+    - key: image
+  icon:
+    - view_list
+value:
+  _type: reports_list
+  _uuid:
+  image:
+  title:
+  lead:
+_inputs_from_glob:
+  - /.cloudcannon/inputs/background-image.cloudcannon.inputs.yml
+_inputs:
+  title:
+    type: text
+    cascade: false
+    label: Title
+  lead:
+    type: textarea
+    label: Lead text

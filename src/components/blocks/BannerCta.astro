@@ -1,0 +1,30 @@
+---
+import Button from '@/components/Button.astro'
+import Heading from '@/components/Heading.astro'
+import { imageUrl } from '@/lib/images'
+
+const { _uuid, image, heading, headline, button } = Astro.props
+const background = await imageUrl(image, { width: 1440, quality: 90 })
+---
+
+<section
+  class="bg-no-repeat bg-cover bg-center"
+  data-rosey-ns={_uuid}
+  style={background ? `background-image: url('${background}')` : undefined}
+  >
+
+  <div class="container mx-auto flex flex-col justify-between items-start min-h-[80vh] py-16 px-6">
+
+    {heading?.title && (
+      <Heading title={heading.title} icon={heading.icon} variant={heading.style} />
+    )}
+
+    <div class="max-w-[474px]">
+      <h2 class="text-white text-3xl md:text-5xl leading-[120%] font-heading mb-10" data-editable="text" data-prop="headline" data-rosey="headline">{headline}</h2>
+      {button?.label?.trim() && (
+        <Button label={button.label} href={button.url} variant={button.style} labelProp="button.label" />
+      )}
+    </div>
+  </div>
+
+</section>

@@ -1,24 +1,34 @@
 ---
-import { getTransLink } from '../utils/i18n'
 import { Image } from 'astro:assets'
 import ArrowLink from './ArrowLink.astro'
-const { language, report } = Astro.props
+import { resolveImage } from '@/lib/images'
+
+// `file` is the report's repository path. When given, the title and image are edited in
+// place and saved to that report (`@file[...]`), not to the page showing the card.
+// `roseyRoot` is the report's translation namespace, so the card shares the report page's title key.
+const { title, image, href, file, roseyRoot } = Astro.props
+const editable = (field: string) =>
+  file ? { 'data-editable': field === 'image' ? 'image' : 'text', 'data-prop': `@file[${file}].${field}` } : {}
+const imageSrc = resolveImage(image?.src)
 ---
 
-<article class="relative group">
-  <Image
-    class="object-cover object-center"
-    src={`${report.image.filename}/m/700x0`}
-    alt={report.image.alt}
-    width={350}
-    height={350}
-    layout="full-width"
-    loading="lazy"
-  />
+<article class="relative group" data-rosey-root={roseyRoot}>
+  {imageSrc && (
+    <Image
+      class="object-cover object-center"
+      src={imageSrc}
+      alt={image?.alt ?? ''}
+      width={350}
+      height={350}
+      layout="full-width"
+      loading="lazy"
+      {...editable('image')}
+    />
+  )}
   <h3 class="mt-6 text-white text-xl">
-    <a href={getTransLink(language, `/report/${report.slug}`)} class="underline-offset-4 hover:underline">
-      {report.title}
+    <a href={href} class="underline-offset-4 hover:underline">
+      <span {...editable('title')} data-rosey={roseyRoot ? 'title' : undefined}>{title}</span>
     </a>
   </h3>
-  <ArrowLink reveal href={getTransLink(language, `/report/${report.slug}`)} class="top-[67px] -right-[40px]" />
+  <ArrowLink reveal href={href} class="top-[67px] -right-[40px]" />
 </article>

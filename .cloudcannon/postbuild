@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Translation pipeline (Rosey). CloudCannon runs this file after `npm run build`.
+# Locally: `npm run build:translated` runs the build and then this file.
+# No `set -e` or other shell options here: CloudCannon sources this file into its own build shell.
+#
+# 1. Read every `data-rosey` key from the built English pages into rosey/base.json.
+# 2. Add new keys to rosey/locales/es.json and drop removed ones (translations are kept),
+#    and write the language list the Visual Editor reads (dist/_rcc/locales.json).
+# 3. Keep the English build aside, then build dist/ again: English at /, Spanish at /es/.
+
+npx rosey generate --source dist
+npx rosey-cloudcannon-connector write-locales --source rosey --dest dist --locales es
+rm -rf ./_untranslated_site
+mv ./dist ./_untranslated_site
+npx rosey build --source _untranslated_site --dest dist --default-language en --default-language-at-root --exclusions "\.(html?)$"

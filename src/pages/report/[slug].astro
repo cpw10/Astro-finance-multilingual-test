@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import ReportHero from '../../components/ReportHero.astro'
+import { reportRoseyRoot } from '../../lib/reports'
+
+// One route for every entry in src/content/reports.
+export async function getStaticPaths() {
+  const reports = await getCollection('reports')
+  return reports.map((report) => ({
+    params: { slug: report.id },
+    props: { report },
+  }))
+}
+
+const { report } = Astro.props
+const { title, author, published_date, image, metatags } = report.data
+const { Content } = await render(report)
+// Namespace of this report's translation keys (Rosey): `report/<file name>`.
+const roseyRoot = reportRoseyRoot(report.id)
+---
+
+<Layout title={title} metatags={metatags} roseyRoot={roseyRoot}>
+  <article data-rosey-root={roseyRoot}>
+    <editable-component
+      class="block"
+      data-component="report_hero"
+      data-prop-title="title"
+      data-prop-author="author"
+      data-prop-published_date="published_date"
+      data-prop-image="image"
+    >
+      <ReportHero title={title} author={author} published_date={published_date} image={image} />
+    </editable-component>
+
+    <div class="container mx-auto px-6">
+      <div class="mx-auto py-24 px-4 prose prose-headings:text-primary prose-headings:mt-8 prose-a:text-primary prose-a:hover:underline" data-editable="text" data-prop="@content" data-rosey="body">
+        <Content />
+      </div>
+    </div>
+  </article>
+</Layout>

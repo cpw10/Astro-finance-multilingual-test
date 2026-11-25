@@ -1,0 +1,17 @@
+---
+// One logo in the hero's partner row. Rendered on its own so the Visual Editor can re-render a single item.
+const { name, logo, link } = Astro.props
+---
+
+<a href={link || '#'}>
+  {logo && (
+    <img
+      src={logo}
+      alt={name ?? ''}
+      class="h-[24px] opacity-65"
+      data-editable="image"
+      data-prop-src="logo"
+      data-prop-alt="name"
+    />
+  )}
+</a>

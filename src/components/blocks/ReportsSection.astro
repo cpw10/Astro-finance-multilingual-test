@@ -1,0 +1,32 @@
+---
+import { getEntry } from 'astro:content'
+import Button from '@/components/Button.astro'
+import ReportCard from '@/components/ReportCard.astro'
+import { reportFile, reportHref, reportRoseyRoot } from '@/lib/reports'
+
+const { _uuid, title, reports, button } = Astro.props
+
+// `reports` holds report ids (file names without the extension), in display order.
+// The lookup stays in this component so the Visual Editor re-runs it when the selection changes.
+const entries = (
+  await Promise.all((reports ?? []).map((id: string) => getEntry('reports', id)))
+).filter((entry) => entry !== undefined)
+---
+
+<section data-rosey-ns={_uuid} class="bg-black">
+  <div class="container mx-auto px-6 py-24 flex flex-col items-center gap-16">
+    {title && <h2 class="text-white text-3xl md:text-5xl text-center leading-[120%] font-heading mb-16 px-6" data-editable="text" data-prop="title" data-rosey="title">{title}</h2>}
+
+    <ul class="grid md:grid-cols-3 gap-6">
+      {entries.map((report) => (
+        <li>
+          <ReportCard title={report.data.title} image={report.data.image} href={reportHref(report.id)} file={reportFile(report.id)} roseyRoot={reportRoseyRoot(report.id)} />
+        </li>
+      ))}
+    </ul>
+
+    {button?.label?.trim() && (
+      <Button label={button.label} href={button.url} variant={button.style} labelProp="button.label" />
+    )}
+  </div>
+</section>

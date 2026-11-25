@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "keys": {
+    "index.html": {
+      "original": "index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "report/clarity-over-complexity/index.html": {
+      "original": "report/clarity-over-complexity/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "report/from-chaos-to-control/index.html": {
+      "original": "report/from-chaos-to-control/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "report/from-chaos-to-more-control/index.html": {
+      "original": "report/from-chaos-to-more-control/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "report/index.html": {
+      "original": "report/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "report/the-hidden-cost-of-manual-financial-tracking/index.html": {
+      "original": "report/the-hidden-cost-of-manual-financial-tracking/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "spain-campaign/index.html": {
+      "original": "spain-campaign/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    }
+  }
+}

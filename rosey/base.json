@@ -1,0 +1,957 @@
+{
+  "version": 2,
+  "keys": {
+    "footer:company_description": {
+      "original": "We build intuitive financial tools that help growing teams track, understand, and manage their money",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "footer:company_heading": {
+      "original": "Company Details",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "footer:copyright": {
+      "original": "All Rights Reserved",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "footer:legal:privacy-policy": {
+      "original": "Privacy Policy",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "footer:legal:terms-conditions": {
+      "original": "Terms &amp; Conditions",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "index:191f226c-88b8-45dc-bb64-021e968ac77c:0a055eb8-2713-4508-bc48-9edd590ccc50:author_title": {
+      "original": "Operations Lead",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:191f226c-88b8-45dc-bb64-021e968ac77c:0a055eb8-2713-4508-bc48-9edd590ccc50:quote": {
+      "original": "Before we switched, managing our finances felt like guesswork. Now everything’s clear, organized, and actually enjoyable.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:191f226c-88b8-45dc-bb64-021e968ac77c:heading_title": {
+      "original": "What they say",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:27658a2a-0c30-484b-9d65-4abd6962da87:button_label": {
+      "original": "Become a Member",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:27658a2a-0c30-484b-9d65-4abd6962da87:heading_title": {
+      "original": "Membership",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:27658a2a-0c30-484b-9d65-4abd6962da87:headline": {
+      "original": "See Your Finances in a Whole New Light",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:4b35d856-c9fa-440f-b26d-a6cca0504494:description": {
+      "original": "Monitor financial activity as it happens—no delays, no surprises. Stay in sync with your team, your goals, and your bottom line.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:4b35d856-c9fa-440f-b26d-a6cca0504494:title": {
+      "original": "Real-time tracking",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:d1af1a15-c760-4d97-b466-12d94b90d840:description": {
+      "original": "Turn complex data into actionable insights with dynamic reports and visual dashboards that help you make better decisions, faster.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:d1af1a15-c760-4d97-b466-12d94b90d840:title": {
+      "original": "Finance Analysis",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:d3cc8009-f297-476b-80b1-939367d4bd56:description": {
+      "original": "Stay ahead of regulatory demands with automated workflows that ensure every financial process stays audit-ready.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:d3cc8009-f297-476b-80b1-939367d4bd56:title": {
+      "original": "Flow Compilance",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:2dbda80e-1999-4f65-89d1-072547d4696f:title": {
+      "original": "Stay Aligned, Stay Compliant",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:41f7411e-742b-476e-8a1f-fc5929a26375:5e721158-ab74-41a8-b243-a529c4d720b1:role": {
+      "original": "Operations Lead",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:41f7411e-742b-476e-8a1f-fc5929a26375:683bc84a-3921-4064-94c6-9fcb9715cdeb:role": {
+      "original": "Chief Operations Officer",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:41f7411e-742b-476e-8a1f-fc5929a26375:86123998-b9dc-4713-9456-7c361a7a45ad:role": {
+      "original": "Finance Manager",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:41f7411e-742b-476e-8a1f-fc5929a26375:a5b7bc7f-a7a8-40da-b156-babc11cc1eea:role": {
+      "original": "Founder &amp; CEO",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:41f7411e-742b-476e-8a1f-fc5929a26375:title": {
+      "original": "Meet The Team",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:2db63439-752a-4ffc-a721-51d270f9b54f:label": {
+      "original": "Transactions Tracked",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:2db63439-752a-4ffc-a721-51d270f9b54f:number": {
+      "original": "$500m",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:58be366b-ffb0-47e1-b021-3f40c0ec794f:label": {
+      "original": "Countries Served",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:58be366b-ffb0-47e1-b021-3f40c0ec794f:number": {
+      "original": "25",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:a66bf0a6-843e-4351-9725-97b3c1285c90:label": {
+      "original": "Trusted Partners",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:a66bf0a6-843e-4351-9725-97b3c1285c90:number": {
+      "original": "150+",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:b034bbc3-778c-408b-8921-cdfbe59bee76:label": {
+      "original": "Years in the business",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:b034bbc3-778c-408b-8921-cdfbe59bee76:number": {
+      "original": "50+",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:lead": {
+      "original": "Designed to scale with you—no bloat, no complexity.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:title": {
+      "original": "Built for Teams That Are Growing with Purpose",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:button_label": {
+      "original": "Become a Member",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:headline": {
+      "original": "The Sky Is Clearer When Your Finances Make Sense.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:lead": {
+      "original": "Cut through the noise. Connect with people, not profiles.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:partners_title": {
+      "original": "Our partners",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:ab8f88a7-a1fe-405d-9a7d-23d02327bef3:button_label": {
+      "original": "See all reports",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:ab8f88a7-a1fe-405d-9a7d-23d02327bef3:title": {
+      "original": "Latest Reports",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:3eac3d2d-d96e-424c-91fd-b79478cceb88:description": {
+      "original": "Creates tools that make business feel simpler  and more human.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:3eac3d2d-d96e-424c-91fd-b79478cceb88:role": {
+      "original": "Adviser, Example Company",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:4b3c7fe4-30e6-474a-b94f-b2e87eb64b50:description": {
+      "original": "Turns complex numbers into clear financial decisions.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:4b3c7fe4-30e6-474a-b94f-b2e87eb64b50:role": {
+      "original": "Adviser, Example Company",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:5fbe1d5f-a9b1-4f55-9ff3-28bbf6d42d9c:description": {
+      "original": "Streamlines systems to help teams work smarter and stay organized.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:5fbe1d5f-a9b1-4f55-9ff3-28bbf6d42d9c:role": {
+      "original": "Adviser, Example Company",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:9c781a09-9dd5-43ac-bfbf-89a7580d0a7d:description": {
+      "original": "Builds people-first cultures that scale with care.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:9c781a09-9dd5-43ac-bfbf-89a7580d0a7d:role": {
+      "original": "Adviser, Example Company",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:title": {
+      "original": "Advisers",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:button_label": {
+      "original": "Become a Member",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:heading_title": {
+      "original": "Membership",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:headline": {
+      "original": "Built for Teams That Are Growing with Purpose",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:lead": {
+      "original": "Designed to scale with you—no bloat, no complexity.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:og_description": {
+      "original": "This is the meta description info that would become real once you start building your awesome website!",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:og_title": {
+      "original": "Company Name",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:page_description": {
+      "original": "A high-performance website starter template built for financial teams to launch new brands, products, or campaigns quickly and efficiently.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:page_title": {
+      "original": "Global Finance Starter",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:twitter_description": {
+      "original": "This is the meta description info that would become real once you start building your awesome website!",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:twitter_title": {
+      "original": "Company Name",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "nav:cta_label": {
+      "original": "Become a Member",
+      "value": null,
+      "pages": {
+        "index.html": 2,
+        "report/clarity-over-complexity/index.html": 2,
+        "report/from-chaos-to-control/index.html": 2,
+        "report/from-chaos-to-more-control/index.html": 2,
+        "report/index.html": 2,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 2,
+        "spain-campaign/index.html": 2
+      },
+      "total": 14
+    },
+    "nav:membership": {
+      "original": "Membership",
+      "value": null,
+      "pages": {
+        "index.html": 3,
+        "report/clarity-over-complexity/index.html": 3,
+        "report/from-chaos-to-control/index.html": 3,
+        "report/from-chaos-to-more-control/index.html": 3,
+        "report/index.html": 3,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 3,
+        "spain-campaign/index.html": 3
+      },
+      "total": 21
+    },
+    "nav:platform": {
+      "original": "Platform",
+      "value": null,
+      "pages": {
+        "index.html": 3,
+        "report/clarity-over-complexity/index.html": 3,
+        "report/from-chaos-to-control/index.html": 3,
+        "report/from-chaos-to-more-control/index.html": 3,
+        "report/index.html": 3,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 3,
+        "spain-campaign/index.html": 3
+      },
+      "total": 21
+    },
+    "nav:reports": {
+      "original": "Reports",
+      "value": null,
+      "pages": {
+        "index.html": 3,
+        "report/clarity-over-complexity/index.html": 3,
+        "report/from-chaos-to-control/index.html": 3,
+        "report/from-chaos-to-more-control/index.html": 3,
+        "report/index.html": 3,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 3,
+        "spain-campaign/index.html": 3
+      },
+      "total": 21
+    },
+    "nav:select_language": {
+      "original": "Select language",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "nav:team": {
+      "original": "Team",
+      "value": null,
+      "pages": {
+        "index.html": 3,
+        "report/clarity-over-complexity/index.html": 3,
+        "report/from-chaos-to-control/index.html": 3,
+        "report/from-chaos-to-more-control/index.html": 3,
+        "report/index.html": 3,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 3,
+        "spain-campaign/index.html": 3
+      },
+      "total": 21
+    },
+    "report/clarity-over-complexity:body": {
+      "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>\n",
+      "value": null,
+      "pages": {
+        "report/clarity-over-complexity/index.html": 1
+      },
+      "total": 1
+    },
+    "report/clarity-over-complexity:page_description": {
+      "original": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+      "value": null,
+      "pages": {
+        "report/clarity-over-complexity/index.html": 1
+      },
+      "total": 1
+    },
+    "report/clarity-over-complexity:page_title": {
+      "original": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+      "value": null,
+      "pages": {
+        "report/clarity-over-complexity/index.html": 1
+      },
+      "total": 1
+    },
+    "report/clarity-over-complexity:title": {
+      "original": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/index.html": 1
+      },
+      "total": 3
+    },
+    "report/from-chaos-to-control:body": {
+      "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>\n",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-control/index.html": 1
+      },
+      "total": 1
+    },
+    "report/from-chaos-to-control:page_description": {
+      "original": "Read all about chaos to control. Building a Financial System That Actually Works",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-control/index.html": 1
+      },
+      "total": 1
+    },
+    "report/from-chaos-to-control:page_title": {
+      "original": "From Chaos to Control: Building a Financial System That Actually Works",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-control/index.html": 1
+      },
+      "total": 1
+    },
+    "report/from-chaos-to-control:title": {
+      "original": "From Chaos to Control: Building a Financial System That Works",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/index.html": 1
+      },
+      "total": 3
+    },
+    "report/from-chaos-to-more-control:body": {
+      "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>\n",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-more-control/index.html": 1
+      },
+      "total": 1
+    },
+    "report/from-chaos-to-more-control:page_description": {
+      "original": "Read all about chaos to control. Building a Financial System That Actually Works",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-more-control/index.html": 1
+      },
+      "total": 1
+    },
+    "report/from-chaos-to-more-control:page_title": {
+      "original": "From Chaos to Control: Building a Financial System That Actually Works",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-more-control/index.html": 1
+      },
+      "total": 1
+    },
+    "report/from-chaos-to-more-control:title": {
+      "original": "From Chaos to Control: Building a Financial System That Works",
+      "value": null,
+      "pages": {
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1
+      },
+      "total": 2
+    },
+    "report/the-hidden-cost-of-manual-financial-tracking:body": {
+      "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>!</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>\n",
+      "value": null,
+      "pages": {
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 1
+    },
+    "report/the-hidden-cost-of-manual-financial-tracking:page_description": {
+      "original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+      "value": null,
+      "pages": {
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 1
+    },
+    "report/the-hidden-cost-of-manual-financial-tracking:page_title": {
+      "original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+      "value": null,
+      "pages": {
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 1
+    },
+    "report/the-hidden-cost-of-manual-financial-tracking:title": {
+      "original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 3
+    },
+    "report:55f924f4-62da-4a1a-80d9-2282af4998d6:lead": {
+      "original": "Browse our comprehensive library of reports covering performance metrics, key insights, and data-driven recommendations. Each report is curated to help you track trends, identify opportunities, and make informed decisions faster.",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report:55f924f4-62da-4a1a-80d9-2282af4998d6:title": {
+      "original": "Our Reports",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report:75ca4414-771e-43a3-b0bd-53e4bcf19709:button_label": {
+      "original": "Become a Member",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report:75ca4414-771e-43a3-b0bd-53e4bcf19709:heading_title": {
+      "original": "Membership",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report:75ca4414-771e-43a3-b0bd-53e4bcf19709:headline": {
+      "original": "See Your Finances in a Whole New Light",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report:page_description": {
+      "original": "This is the report page and it's awesome.",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report:page_title": {
+      "original": "Reports | Global Finance Starter",
+      "value": null,
+      "pages": {
+        "report/index.html": 1
+      },
+      "total": 1
+    },
+    "report_labels:author_label": {
+      "original": "Author",
+      "value": null,
+      "pages": {
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 4
+    },
+    "report_labels:back_label": {
+      "original": "Return to all reports",
+      "value": null,
+      "pages": {
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 4
+    },
+    "report_labels:label": {
+      "original": "Report",
+      "value": null,
+      "pages": {
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1
+      },
+      "total": 4
+    },
+    "site:og_locale": {
+      "original": "en",
+      "value": null,
+      "pages": {
+        "index.html": 1,
+        "report/clarity-over-complexity/index.html": 1,
+        "report/from-chaos-to-control/index.html": 1,
+        "report/from-chaos-to-more-control/index.html": 1,
+        "report/index.html": 1,
+        "report/the-hidden-cost-of-manual-financial-tracking/index.html": 1,
+        "spain-campaign/index.html": 1
+      },
+      "total": 7
+    },
+    "spain-campaign:16dd534c-27a4-483c-b77d-2a6083cf9a7d:button_label": {
+      "original": "Join the Campaign",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:16dd534c-27a4-483c-b77d-2a6083cf9a7d:heading_title": {
+      "original": "Membership",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:16dd534c-27a4-483c-b77d-2a6083cf9a7d:headline": {
+      "original": "Ready to Join the Spain Campaign?",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:225f2f14-d2cf-4421-ac25-f224468ce291:button_label": {
+      "original": "Learn More",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:225f2f14-d2cf-4421-ac25-f224468ce291:headline": {
+      "original": "Bringing Financial Clarity to Spain's Growing Businesses",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:225f2f14-d2cf-4421-ac25-f224468ce291:lead": {
+      "original": "We're launching a new initiative to help Spanish teams simplify compliance, reporting, and cross-border growth.",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:11f5b80a-6c19-4bb4-badc-fe063e98c871:label": {
+      "original": "Customer Satisfaction",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:11f5b80a-6c19-4bb4-badc-fe063e98c871:number": {
+      "original": "95%",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:30c951c8-be1b-427e-bf5e-f5be7eee8e4f:label": {
+      "original": "Tracked Annually",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:30c951c8-be1b-427e-bf5e-f5be7eee8e4f:number": {
+      "original": "€50M",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:65a22adb-aa26-48c8-89c0-6670407aea40:label": {
+      "original": "Spanish Businesses Supported",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:65a22adb-aa26-48c8-89c0-6670407aea40:number": {
+      "original": "1200+",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:c1337bfe-3e20-46ac-b01e-17f24f6a0814:label": {
+      "original": "Active in Madrid and More",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:c1337bfe-3e20-46ac-b01e-17f24f6a0814:number": {
+      "original": "5+",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:lead": {
+      "original": "Our platform helps Spanish businesses cut through complex compliance.",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:title": {
+      "original": "Why Spain, Why Now?",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    },
+    "spain-campaign:page_title": {
+      "original": "Spain Campaign",
+      "value": null,
+      "pages": {
+        "spain-campaign/index.html": 1
+      },
+      "total": 1
+    }
+  }
+}

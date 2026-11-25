@@ -2,7 +2,8 @@
 import { Badge } from '@/components/ui/badge'
 import { plainBadge } from '@/lib/ui'
 
-const { title, icon, variant = 'default' } = Astro.props
+// Every block stores this badge under `heading`, so the editable paths are fixed.
+const { title, icon, variant } = Astro.props
 
 const variants = {
   default: 'border-0 p-0',
@@ -10,9 +11,9 @@ const variants = {
 }
 ---
 
-<Badge as="h2" variant="outline" class:list={[plainBadge, variants[variant]]}>
+<Badge as="h2" variant="outline" class:list={[plainBadge, variants[variant] || variants.default]}>
   <div class="bg-primary p-1 rounded-sm">
-    {icon && <img src={icon} alt="" class="w-[25px] h-[25px]" />}
+    {icon && <img src={icon} alt="" class="w-[25px] h-[25px]" data-editable="image" data-prop-src="heading.icon" />}
   </div>
-  <span>{title}</span>
+  <span data-editable="text" data-prop="heading.title" data-rosey="heading_title">{title}</span>
 </Badge>

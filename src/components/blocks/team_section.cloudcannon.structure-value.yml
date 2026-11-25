@@ -1,0 +1,29 @@
+label: Team
+description: A title above team member photos, two per row.
+icon: groups
+picker_preview:
+  text:
+    - Team
+  icon:
+    - groups
+preview:
+  text:
+    - key: title
+    - Team
+  icon:
+    - groups
+value:
+  _type: team_section
+  _uuid:
+  title:
+  members: []
+_inputs:
+  title:
+    type: text
+    cascade: false
+    label: Title
+  members:
+    type: array
+    label: Team members
+    options:
+      structures: _structures.members

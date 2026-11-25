@@ -1,0 +1,57 @@
+label: Split banner
+description: A card with text on one side and an image on the other.
+icon: vertical_split
+picker_preview:
+  text:
+    - Split banner
+  icon:
+    - vertical_split
+preview:
+  text:
+    - key: headline
+    - Split banner
+  image:
+    - key: image.src
+  icon:
+    - vertical_split
+value:
+  _type: banner_split
+  _uuid:
+  heading:
+    title: Membership
+    icon:
+    style: default
+  headline:
+  lead:
+  image:
+    src:
+    alt:
+  button:
+    label: Become a Member
+    style: primary
+    url: "#"
+_inputs_from_glob:
+  - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+_inputs:
+  heading:
+    type: object
+    label: Heading badge
+    comment: The small badge with an icon. Remove it to hide it.
+    options:
+      structures: _structures.heading
+      preview:
+        icon: label
+  headline:
+    type: text
+    label: Headline
+  lead:
+    type: textarea
+    label: Lead text
+  button:
+    type: object
+    label: Button
+    comment: Remove the button to hide it.
+    options:
+      structures: _structures.button
+      preview:
+        icon: ads_click

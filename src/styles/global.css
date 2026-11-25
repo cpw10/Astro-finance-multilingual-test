@@ -64,7 +64,7 @@
 }
 
 /* bejamas/ui tokens. The site is light-only, so there is no .dark block.
-   Layout.astro overrides --primary on <body> from the Storyblok "colors" datasource. */
+   Layout.astro overrides --primary on <body> from `primary_color` in src/data/site.json. */
 :root {
   --font-heading: "Adamina", sans-serif;
 
@@ -132,6 +132,12 @@ body:has(#header [data-slot="hamburger-menu"][data-state="open"]) {
 
 header {
   isolation: isolate;
+}
+
+/* CloudCannon Visual Editor only: an emptied list keeps a box for its "Add item" button. */
+.cms-editor-active [data-editable="array"]:not(:has(> [data-editable="array-item"])) {
+  min-width: 10rem;
+  min-height: 3rem;
 }
 
 .button--glass {

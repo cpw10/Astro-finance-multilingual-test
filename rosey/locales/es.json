@@ -1,0 +1,542 @@
+{
+  "footer:company_description": {
+    "original": "We build intuitive financial tools that help growing teams track, understand, and manage their money",
+    "value": "We build intuitive financial tools that help growing teams track, understand, and manage their money",
+    "_base_original": "We build intuitive financial tools that help growing teams track, understand, and manage their money"
+  },
+  "footer:company_heading": {
+    "original": "Company Details",
+    "value": "Detalles de la empresa",
+    "_base_original": "Company Details"
+  },
+  "footer:copyright": {
+    "original": "All Rights Reserved",
+    "value": "Todos los derechos reservados",
+    "_base_original": "All Rights Reserved"
+  },
+  "footer:legal:privacy-policy": {
+    "original": "Privacy Policy",
+    "value": "Política de privacidad",
+    "_base_original": "Privacy Policy"
+  },
+  "footer:legal:terms-conditions": {
+    "original": "Terms &amp; Conditions",
+    "value": "Términos y condiciones",
+    "_base_original": "Terms &amp; Conditions"
+  },
+  "index:191f226c-88b8-45dc-bb64-021e968ac77c:0a055eb8-2713-4508-bc48-9edd590ccc50:author_title": {
+    "original": "Operations Lead",
+    "value": "Líder de Operaciones",
+    "_base_original": "Operations Lead"
+  },
+  "index:191f226c-88b8-45dc-bb64-021e968ac77c:0a055eb8-2713-4508-bc48-9edd590ccc50:quote": {
+    "original": "Before we switched, managing our finances felt like guesswork. Now everything’s clear, organized, and actually enjoyable.",
+    "value": "Antes de cambiar, administrar nuestras finanzas se sentía como una suposición. Ahora todo es claro, organizado y realmente agradable.",
+    "_base_original": "Before we switched, managing our finances felt like guesswork. Now everything’s clear, organized, and actually enjoyable."
+  },
+  "index:191f226c-88b8-45dc-bb64-021e968ac77c:heading_title": {
+    "original": "What they say",
+    "value": "Lo que dicen.",
+    "_base_original": "What they say"
+  },
+  "index:27658a2a-0c30-484b-9d65-4abd6962da87:button_label": {
+    "original": "Become a Member",
+    "value": "Conviértete en miembro",
+    "_base_original": "Become a Member"
+  },
+  "index:27658a2a-0c30-484b-9d65-4abd6962da87:heading_title": {
+    "original": "Membership",
+    "value": "Membresía",
+    "_base_original": "Membership"
+  },
+  "index:27658a2a-0c30-484b-9d65-4abd6962da87:headline": {
+    "original": "See Your Finances in a Whole New Light",
+    "value": "Descubre tus finanzas bajo una nueva perspectiva.",
+    "_base_original": "See Your Finances in a Whole New Light"
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:4b35d856-c9fa-440f-b26d-a6cca0504494:description": {
+    "original": "Monitor financial activity as it happens—no delays, no surprises. Stay in sync with your team, your goals, and your bottom line.",
+    "value": "Supervisa la actividad financiera a medida que ocurre, sin retrasos, sin sorpresas. Mantente sincronizado con tu equipo, tus objetivos y tus resultados finales.",
+    "_base_original": "Monitor financial activity as it happens—no delays, no surprises. Stay in sync with your team, your goals, and your bottom line."
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:4b35d856-c9fa-440f-b26d-a6cca0504494:title": {
+    "original": "Real-time tracking",
+    "value": "Seguimiento en tiempo real",
+    "_base_original": "Real-time tracking"
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:d1af1a15-c760-4d97-b466-12d94b90d840:description": {
+    "original": "Turn complex data into actionable insights with dynamic reports and visual dashboards that help you make better decisions, faster.",
+    "value": "Transforma datos complejos en ideas accionables con informes dinámicos y paneles visuales que te ayudan a tomar decisiones mejores y más rápidas.",
+    "_base_original": "Turn complex data into actionable insights with dynamic reports and visual dashboards that help you make better decisions, faster."
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:d1af1a15-c760-4d97-b466-12d94b90d840:title": {
+    "original": "Finance Analysis",
+    "value": "Análisis Financiero",
+    "_base_original": "Finance Analysis"
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:d3cc8009-f297-476b-80b1-939367d4bd56:description": {
+    "original": "Stay ahead of regulatory demands with automated workflows that ensure every financial process stays audit-ready.",
+    "value": "Mantente al tanto de las exigencias regulatorias con flujos de trabajo automatizados que garantizan que cada proceso financiero esté listo para ser auditado.",
+    "_base_original": "Stay ahead of regulatory demands with automated workflows that ensure every financial process stays audit-ready."
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:d3cc8009-f297-476b-80b1-939367d4bd56:title": {
+    "original": "Flow Compilance",
+    "value": "Cumplimiento del flujo",
+    "_base_original": "Flow Compilance"
+  },
+  "index:2dbda80e-1999-4f65-89d1-072547d4696f:title": {
+    "original": "Stay Aligned, Stay Compliant",
+    "value": "Mantente alineado, mantente conforme.",
+    "_base_original": "Stay Aligned, Stay Compliant"
+  },
+  "index:41f7411e-742b-476e-8a1f-fc5929a26375:5e721158-ab74-41a8-b243-a529c4d720b1:role": {
+    "original": "Operations Lead",
+    "value": "Líder de Operaciones",
+    "_base_original": "Operations Lead"
+  },
+  "index:41f7411e-742b-476e-8a1f-fc5929a26375:683bc84a-3921-4064-94c6-9fcb9715cdeb:role": {
+    "original": "Chief Operations Officer",
+    "value": "Director de Operaciones",
+    "_base_original": "Chief Operations Officer"
+  },
+  "index:41f7411e-742b-476e-8a1f-fc5929a26375:86123998-b9dc-4713-9456-7c361a7a45ad:role": {
+    "original": "Finance Manager",
+    "value": "Gerente de Finanzas",
+    "_base_original": "Finance Manager"
+  },
+  "index:41f7411e-742b-476e-8a1f-fc5929a26375:a5b7bc7f-a7a8-40da-b156-babc11cc1eea:role": {
+    "original": "Founder &amp; CEO",
+    "value": "Fundador y CEO",
+    "_base_original": "Founder &amp; CEO"
+  },
+  "index:41f7411e-742b-476e-8a1f-fc5929a26375:title": {
+    "original": "Meet The Team",
+    "value": "Conoce al equipo",
+    "_base_original": "Meet The Team"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:2db63439-752a-4ffc-a721-51d270f9b54f:label": {
+    "original": "Transactions Tracked",
+    "value": "Transacciones rastreadas",
+    "_base_original": "Transactions Tracked"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:2db63439-752a-4ffc-a721-51d270f9b54f:number": {
+    "original": "$500m",
+    "value": "$500m",
+    "_base_original": "$500m"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:58be366b-ffb0-47e1-b021-3f40c0ec794f:label": {
+    "original": "Countries Served",
+    "value": "Países atendidos",
+    "_base_original": "Countries Served"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:58be366b-ffb0-47e1-b021-3f40c0ec794f:number": {
+    "original": "25",
+    "value": "25",
+    "_base_original": "25"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:a66bf0a6-843e-4351-9725-97b3c1285c90:label": {
+    "original": "Trusted Partners",
+    "value": "Socios de confianza",
+    "_base_original": "Trusted Partners"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:a66bf0a6-843e-4351-9725-97b3c1285c90:number": {
+    "original": "150+",
+    "value": "150+",
+    "_base_original": "150+"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:b034bbc3-778c-408b-8921-cdfbe59bee76:label": {
+    "original": "Years in the business",
+    "value": "Años en el negocio",
+    "_base_original": "Years in the business"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:b034bbc3-778c-408b-8921-cdfbe59bee76:number": {
+    "original": "50+",
+    "value": "50+",
+    "_base_original": "50+"
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:lead": {
+    "original": "Designed to scale with you—no bloat, no complexity.",
+    "value": "Diseñado para crecer contigo, sin exceso, sin complejidad.",
+    "_base_original": "Designed to scale with you—no bloat, no complexity."
+  },
+  "index:4311bef5-aef1-4df6-891d-4f8f0ff208d9:title": {
+    "original": "Built for Teams That Are Growing with Purpose",
+    "value": "Diseñado para equipos que están creciendo con un propósito.",
+    "_base_original": "Built for Teams That Are Growing with Purpose"
+  },
+  "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:button_label": {
+    "original": "Become a Member",
+    "value": "Conviértete en miembro",
+    "_base_original": "Become a Member"
+  },
+  "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:headline": {
+    "original": "The Sky Is Clearer When Your Finances Make Sense.",
+    "value": "El cielo es más claro cuando tus finanzas tienen sentido.",
+    "_base_original": "The Sky Is Clearer When Your Finances Make Sense."
+  },
+  "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:lead": {
+    "original": "Cut through the noise. Connect with people, not profiles.",
+    "value": "Abre camino entre el ruido. Conéctate con personas, no con perfiles.",
+    "_base_original": "Cut through the noise. Connect with people, not profiles."
+  },
+  "index:53e0dc1d-3205-42cc-a185-1e7c286adc68:partners_title": {
+    "original": "Our partners",
+    "value": "Nuestros socios",
+    "_base_original": "Our partners"
+  },
+  "index:ab8f88a7-a1fe-405d-9a7d-23d02327bef3:button_label": {
+    "original": "See all reports",
+    "value": "Ver todos los informes",
+    "_base_original": "See all reports"
+  },
+  "index:ab8f88a7-a1fe-405d-9a7d-23d02327bef3:title": {
+    "original": "Latest Reports",
+    "value": "Últimos informes",
+    "_base_original": "Latest Reports"
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:3eac3d2d-d96e-424c-91fd-b79478cceb88:description": {
+    "original": "Creates tools that make business feel simpler  and more human.",
+    "value": "Crea herramientas que hacen que los negocios se sientan más simples y humanos.",
+    "_base_original": "Creates tools that make business feel simpler  and more human."
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:3eac3d2d-d96e-424c-91fd-b79478cceb88:role": {
+    "original": "Adviser, Example Company",
+    "value": "Asesor, Empresa Ejemplo",
+    "_base_original": "Adviser, Example Company"
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:4b3c7fe4-30e6-474a-b94f-b2e87eb64b50:description": {
+    "original": "Turns complex numbers into clear financial decisions.",
+    "value": "Convierte números complejos en decisiones financieras claras.",
+    "_base_original": "Turns complex numbers into clear financial decisions."
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:4b3c7fe4-30e6-474a-b94f-b2e87eb64b50:role": {
+    "original": "Adviser, Example Company",
+    "value": "Asesor, Empresa Ejemplo",
+    "_base_original": "Adviser, Example Company"
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:5fbe1d5f-a9b1-4f55-9ff3-28bbf6d42d9c:description": {
+    "original": "Streamlines systems to help teams work smarter and stay organized.",
+    "value": "Optimiza los sistemas para ayudar a los equipos a trabajar de manera más inteligente y mantenerse organizados.",
+    "_base_original": "Streamlines systems to help teams work smarter and stay organized."
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:5fbe1d5f-a9b1-4f55-9ff3-28bbf6d42d9c:role": {
+    "original": "Adviser, Example Company",
+    "value": "Asesor, Empresa Ejemplo",
+    "_base_original": "Adviser, Example Company"
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:9c781a09-9dd5-43ac-bfbf-89a7580d0a7d:description": {
+    "original": "Builds people-first cultures that scale with care.",
+    "value": "Crea culturas centradas en las personas que crecen con cuidado.",
+    "_base_original": "Builds people-first cultures that scale with care."
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:9c781a09-9dd5-43ac-bfbf-89a7580d0a7d:role": {
+    "original": "Adviser, Example Company",
+    "value": "Asesor, Empresa Ejemplo",
+    "_base_original": "Adviser, Example Company"
+  },
+  "index:d45cbe18-9623-4ff7-b1ab-b270363d88d1:title": {
+    "original": "Advisers",
+    "value": "Asesores",
+    "_base_original": "Advisers"
+  },
+  "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:button_label": {
+    "original": "Become a Member",
+    "value": "Conviértete en miembro",
+    "_base_original": "Become a Member"
+  },
+  "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:heading_title": {
+    "original": "Membership",
+    "value": "Membresía",
+    "_base_original": "Membership"
+  },
+  "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:headline": {
+    "original": "Built for Teams That Are Growing with Purpose",
+    "value": "Diseñado para equipos que están creciendo con un propósito.",
+    "_base_original": "Built for Teams That Are Growing with Purpose"
+  },
+  "index:fee2271d-9e7d-40b4-b89f-4fb4522d9562:lead": {
+    "original": "Designed to scale with you—no bloat, no complexity.",
+    "value": "Diseñado para crecer contigo, sin exceso, sin complejidad.",
+    "_base_original": "Designed to scale with you—no bloat, no complexity."
+  },
+  "index:og_description": {
+    "original": "This is the meta description info that would become real once you start building your awesome website!",
+    "value": "This is the meta description info that would become real once you start building your awesome website!",
+    "_base_original": "This is the meta description info that would become real once you start building your awesome website!"
+  },
+  "index:og_title": {
+    "original": "Company Name",
+    "value": "Company Name",
+    "_base_original": "Company Name"
+  },
+  "index:page_description": {
+    "original": "A high-performance website starter template built for financial teams to launch new brands, products, or campaigns quickly and efficiently.",
+    "value": "A high-performance website starter template built for financial teams to launch new brands, products, or campaigns quickly and efficiently.",
+    "_base_original": "A high-performance website starter template built for financial teams to launch new brands, products, or campaigns quickly and efficiently."
+  },
+  "index:page_title": {
+    "original": "Global Finance Starter",
+    "value": "Global Finance Starter",
+    "_base_original": "Global Finance Starter"
+  },
+  "index:twitter_description": {
+    "original": "This is the meta description info that would become real once you start building your awesome website!",
+    "value": "This is the meta description info that would become real once you start building your awesome website!",
+    "_base_original": "This is the meta description info that would become real once you start building your awesome website!"
+  },
+  "index:twitter_title": {
+    "original": "Company Name",
+    "value": "Company Name",
+    "_base_original": "Company Name"
+  },
+  "nav:cta_label": {
+    "original": "Become a Member",
+    "value": "Hazte miembro",
+    "_base_original": "Become a Member"
+  },
+  "nav:membership": {
+    "original": "Membership",
+    "value": "Membresía",
+    "_base_original": "Membership"
+  },
+  "nav:platform": {
+    "original": "Platform",
+    "value": "Plataforma",
+    "_base_original": "Platform"
+  },
+  "nav:reports": {
+    "original": "Reports",
+    "value": "Informes",
+    "_base_original": "Reports"
+  },
+  "nav:select_language": {
+    "original": "Select language",
+    "value": "Select language",
+    "_base_original": "Select language"
+  },
+  "nav:team": {
+    "original": "Team",
+    "value": "Equipo",
+    "_base_original": "Team"
+  },
+  "report_labels:author_label": {
+    "original": "Author",
+    "value": "Autor",
+    "_base_original": "Author"
+  },
+  "report_labels:back_label": {
+    "original": "Return to all reports",
+    "value": "Volver a todos los informes",
+    "_base_original": "Return to all reports"
+  },
+  "report_labels:label": {
+    "original": "Report",
+    "value": "Informar",
+    "_base_original": "Report"
+  },
+  "report:55f924f4-62da-4a1a-80d9-2282af4998d6:lead": {
+    "original": "Browse our comprehensive library of reports covering performance metrics, key insights, and data-driven recommendations. Each report is curated to help you track trends, identify opportunities, and make informed decisions faster.",
+    "value": "Explore nuestra amplia biblioteca de informes que cubren métricas de rendimiento, ideas clave y recomendaciones basadas en datos. Cada informe está diseñado para ayudarte a seguir tendencias, identificar oportunidades y tomar decisiones informadas de manera más rápida.",
+    "_base_original": "Browse our comprehensive library of reports covering performance metrics, key insights, and data-driven recommendations. Each report is curated to help you track trends, identify opportunities, and make informed decisions faster."
+  },
+  "report:55f924f4-62da-4a1a-80d9-2282af4998d6:title": {
+    "original": "Our Reports",
+    "value": "Nuestros informes",
+    "_base_original": "Our Reports"
+  },
+  "report:75ca4414-771e-43a3-b0bd-53e4bcf19709:button_label": {
+    "original": "Become a Member",
+    "value": "Conviértete en miembro",
+    "_base_original": "Become a Member"
+  },
+  "report:75ca4414-771e-43a3-b0bd-53e4bcf19709:heading_title": {
+    "original": "Membership",
+    "value": "Membresía",
+    "_base_original": "Membership"
+  },
+  "report:75ca4414-771e-43a3-b0bd-53e4bcf19709:headline": {
+    "original": "See Your Finances in a Whole New Light",
+    "value": "Descubre tus finanzas bajo una nueva perspectiva.",
+    "_base_original": "See Your Finances in a Whole New Light"
+  },
+  "report:page_description": {
+    "original": "This is the report page and it's awesome.",
+    "value": "This is the report page and it's awesome.",
+    "_base_original": "This is the report page and it's awesome."
+  },
+  "report:page_title": {
+    "original": "Reports | Global Finance Starter",
+    "value": "Reports | Global Finance Starter",
+    "_base_original": "Reports | Global Finance Starter"
+  },
+  "report/clarity-over-complexity:body": {
+    "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>",
+    "value": "<p>Dirigir un negocio ya es lo suficientemente difícil sin sentirse perdido en un mar de términos financieros. Si tus balances parecen crucigramas crípticos, no estás solo. ¿La buena noticia? No necesitas ser contador para obtener claridad financiera, solo necesitas el enfoque correcto.</p>\n<p>También es importante revisar. <a href=\"https://bejamas.com/\">Bejamas</a> Sitio web sin razón.</p>\n<h2 id=\"start-with-the-big-picture\">Comienza con la imagen general.</h2>\n<p>Antes de sumergirse en informes detallados, es importante entender qué es lo más importante para su negocio. Enfoque en un puñado de métricas clave, como flujo de efectivo, márgenes de beneficio y crecimiento de ingresos, que realmente impulsan su toma de decisiones.</p>\n<p>En lugar de ahogarte en todos los informes posibles, crea un panel de control sencillo. Herramientas como QuickBooks o Xero pueden compilar automáticamente estos datos, brindándote información en tiempo real sin necesidad de hojas de cálculo manuales.</p>\n<h2 id=\"demystify-your-cash-flow\">Desmitifica tu flujo de efectivo</h2>\n<p>Los problemas de flujo de efectivo son una de las principales razones por las que las empresas tienen dificultades, pero también son una de las áreas más fáciles de mejorar con el sistema adecuado. Comienza por rastrear tus pagos entrantes y salientes semanalmente, no solo mensualmente.</p>\n<p>Considera configurar alertas automatizadas con tu banco o software de contabilidad. De esa manera, sabrás al instante si un pago importante se retrasa, dándote tiempo para responder antes de que se convierta en una crisis. Este enfoque proactivo puede salvarte de tomar decisiones apresuradas de préstamos con altos intereses.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separar gastos personales y de negocios.</h2>\n<p>Mezclar las finanzas personales y comerciales es una receta para la confusión y las deducciones fiscales perdidas. Abre una cuenta comercial dedicada y, si es posible, obtén una tarjeta de crédito comercial para mantener separados todos los gastos de manera ordenada.</p>\n<p>No solo hará que la temporada de impuestos sea más fácil, sino que también te ayudará a ver el verdadero rendimiento de tu negocio. Evitarás caer en la trampa de pensar que tu negocio es más rentable de lo que realmente es debido a los gastos personales que se cuelan en los libros.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Obtener orientación profesional (sin arruinarse)</h2>\n<p>Un buen contador no es solo para la temporada de impuestos, pueden ayudarte a planificar el crecimiento, identificar riesgos temprano y asegurarse de que estás aprovechando al máximo tu dinero. Si contratar a un director financiero a tiempo completo no es factible, considera externalizar a un servicio de director financiero virtual que pueda proporcionar conocimientos expertos por una fracción del costo.</p>\n<p>Piensa en esto como una inversión, no como un gasto. El socio financiero adecuado a menudo puede ahorrarte más de lo que cuestan al descubrir ineficiencias y oportunidades perdidas.</p>\n<h2 id=\"review-and-adjust-regularly\">Revisar y ajustar regularmente.</h2>\n<p>Las finanzas de tu negocio no son estáticas, por lo que tu comprensión de ellas tampoco debería serlo. Dedica tiempo cada mes para revisar tu rendimiento y ajustar tus estrategias. Esto podría ser tan simple como una reunión de una hora con tu contador o una revisión individual utilizando tu panel de control.</p>\n<p>Con el tiempo, estas verificaciones constantes convertirán los informes financieros de algo intimidante en una herramienta de la que no podrás prescindir.</p>",
+    "_base_original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>"
+  },
+  "report/clarity-over-complexity:page_description": {
+    "original": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+    "value": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+    "_base_original": "Clarity Over Complexity: How to Finally Understand Your Business Finances"
+  },
+  "report/clarity-over-complexity:page_title": {
+    "original": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+    "value": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+    "_base_original": "Clarity Over Complexity: How to Finally Understand Your Business Finances"
+  },
+  "report/clarity-over-complexity:title": {
+    "original": "Clarity Over Complexity: How to Finally Understand Your Business Finances",
+    "value": "Claridad sobre complejidad: Cómo finalmente entender las finanzas de tu negocio",
+    "_base_original": "Clarity Over Complexity: How to Finally Understand Your Business Finances"
+  },
+  "report/from-chaos-to-control:body": {
+    "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>",
+    "value": "<p>Dirigir un negocio ya es lo suficientemente difícil sin sentirse perdido en un mar de términos financieros. Si tus balances parecen crucigramas crípticos, no estás solo. ¿La buena noticia? No necesitas ser contador para obtener claridad financiera, solo necesitas el enfoque correcto.</p>\n<p><em>Hola, nosotros en <a href=\"https://bejamas.com/\">Bejamas</a> He creado esta plantilla, así que seguramente te gustaría echarle un vistazo. <a href=\"https://bejamas.com/work\">nuestras otras obras</a>¡Claro!</em></p>\n<h2 id=\"start-with-the-big-picture\">Comienza con la imagen general.</h2>\n<p>Antes de sumergirse en informes detallados, es importante entender qué es lo más importante para su negocio. Enfoque en un puñado de métricas clave, como el flujo de efectivo, los márgenes de beneficio y el crecimiento de ingresos, que realmente impulsan su toma de decisiones.</p>\n<p>En lugar de ahogarte en todos los informes posibles, crea un panel de control simple. Herramientas como QuickBooks o Xero pueden compilar automáticamente estos datos, brindándote información en tiempo real sin necesidad de hojas de cálculo manuales.</p>\n<h2 id=\"demystify-your-cash-flow\">Desmitifica tu flujo de efectivo</h2>\n<p>Los problemas de flujo de efectivo son una de las principales razones por las que las empresas tienen dificultades, pero también son una de las áreas más fáciles de mejorar con el sistema adecuado. Comienza por rastrear tus pagos entrantes y salientes semanalmente, no solo mensualmente.</p>\n<p>Considera configurar alertas automáticas con tu banco o software de contabilidad. De esta manera, sabrás al instante si un pago importante se retrasa, dándote tiempo para responder antes de que se convierta en una crisis. Este enfoque proactivo puede salvarte de tomar decisiones apresuradas de préstamos con altos intereses.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separar gastos personales y de negocios.</h2>\n<p>Mezclar las finanzas personales y comerciales es una receta para la confusión y las deducciones fiscales perdidas. Abre una cuenta comercial dedicada y, si es posible, obtén una tarjeta de crédito comercial para mantener separados todos los gastos de manera ordenada.</p>\n<p>No solo hará que la temporada de impuestos sea más fácil, sino que también te ayudará a ver el verdadero rendimiento de tu negocio. Evitarás caer en la trampa de pensar que tu negocio es más rentable de lo que realmente es debido a los gastos personales que se cuelan en los libros.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Obtener orientación profesional (sin arruinarse)</h2>\n<p>Un buen contador no es solo para la temporada de impuestos, pueden ayudarte a planificar el crecimiento, identificar riesgos temprano y asegurarse de que estás aprovechando al máximo tu dinero. Si contratar a un director financiero a tiempo completo no es factible, considera externalizar a un servicio de director financiero virtual que pueda proporcionar conocimientos expertos por una fracción del costo.</p>\n<p>Piensa en esto como una inversión, no como un gasto. El socio financiero adecuado a menudo puede ahorrarte más de lo que cuestan al descubrir ineficiencias y oportunidades perdidas.</p>\n<h2 id=\"review-and-adjust-regularly\">Revisar y ajustar regularmente.</h2>\n<p>Las finanzas de tu negocio no son estáticas, por lo que tu comprensión de ellas tampoco debería serlo. Dedica tiempo cada mes para revisar tu rendimiento y ajustar tus estrategias. Esto podría ser tan simple como una reunión de una hora con tu contador o una revisión individual utilizando tu panel de control.</p>\n<p>Con el tiempo, estas verificaciones constantes convertirán los informes financieros de algo intimidante en una herramienta de la que no podrás prescindir.</p>",
+    "_base_original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>"
+  },
+  "report/from-chaos-to-control:page_description": {
+    "original": "Read all about chaos to control. Building a Financial System That Actually Works",
+    "value": "Read all about chaos to control. Building a Financial System That Actually Works",
+    "_base_original": "Read all about chaos to control. Building a Financial System That Actually Works"
+  },
+  "report/from-chaos-to-control:page_title": {
+    "original": "From Chaos to Control: Building a Financial System That Actually Works",
+    "value": "From Chaos to Control: Building a Financial System That Actually Works",
+    "_base_original": "From Chaos to Control: Building a Financial System That Actually Works"
+  },
+  "report/from-chaos-to-control:title": {
+    "original": "From Chaos to Control: Building a Financial System That Works",
+    "value": "De Caos a Control: Construyendo un Sistema Financiero Que Realmente Funcione",
+    "_base_original": "From Chaos to Control: Building a Financial System That Works"
+  },
+  "report/from-chaos-to-more-control:body": {
+    "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>",
+    "value": "<p>Dirigir un negocio ya es lo suficientemente difícil sin sentirse perdido en un mar de términos financieros. Si tus balances parecen crucigramas crípticos, no estás solo. ¿La buena noticia? No necesitas ser contador para obtener claridad financiera, solo necesitas el enfoque correcto.</p>\n<p><em>Hola, nosotros en <a href=\"https://bejamas.com/\">Bejamas</a> He creado esta plantilla, así que seguramente te gustaría echarle un vistazo. <a href=\"https://bejamas.com/work\">nuestras otras obras</a>¡Claro!</em></p>\n<h2 id=\"start-with-the-big-picture\">Comienza con la imagen general.</h2>\n<p>Antes de sumergirse en informes detallados, es importante entender qué es lo más importante para su negocio. Enfoque en un puñado de métricas clave, como el flujo de efectivo, los márgenes de beneficio y el crecimiento de ingresos, que realmente impulsan su toma de decisiones.</p>\n<p>En lugar de ahogarte en todos los informes posibles, crea un panel de control simple. Herramientas como QuickBooks o Xero pueden compilar automáticamente estos datos, brindándote información en tiempo real sin necesidad de hojas de cálculo manuales.</p>\n<h2 id=\"demystify-your-cash-flow\">Desmitifica tu flujo de efectivo</h2>\n<p>Los problemas de flujo de efectivo son una de las principales razones por las que las empresas tienen dificultades, pero también son una de las áreas más fáciles de mejorar con el sistema adecuado. Comienza por rastrear tus pagos entrantes y salientes semanalmente, no solo mensualmente.</p>\n<p>Considera configurar alertas automáticas con tu banco o software de contabilidad. De esta manera, sabrás al instante si un pago importante se retrasa, dándote tiempo para responder antes de que se convierta en una crisis. Este enfoque proactivo puede salvarte de tomar decisiones apresuradas de préstamos con altos intereses.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separar gastos personales y de negocios.</h2>\n<p>Mezclar las finanzas personales y comerciales es una receta para la confusión y las deducciones fiscales perdidas. Abre una cuenta comercial dedicada y, si es posible, obtén una tarjeta de crédito comercial para mantener separados todos los gastos de manera ordenada.</p>\n<p>No solo hará que la temporada de impuestos sea más fácil, sino que también te ayudará a ver el verdadero rendimiento de tu negocio. Evitarás caer en la trampa de pensar que tu negocio es más rentable de lo que realmente es debido a los gastos personales que se cuelan en los libros.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Obtener orientación profesional (sin arruinarse)</h2>\n<p>Un buen contador no es solo para la temporada de impuestos, pueden ayudarte a planificar el crecimiento, identificar riesgos temprano y asegurarse de que estás aprovechando al máximo tu dinero. Si contratar a un director financiero a tiempo completo no es factible, considera externalizar a un servicio de director financiero virtual que pueda proporcionar conocimientos expertos por una fracción del costo.</p>\n<p>Piensa en esto como una inversión, no como un gasto. El socio financiero adecuado a menudo puede ahorrarte más de lo que cuestan al descubrir ineficiencias y oportunidades perdidas.</p>\n<h2 id=\"review-and-adjust-regularly\">Revisar y ajustar regularmente.</h2>\n<p>Las finanzas de tu negocio no son estáticas, por lo que tu comprensión de ellas tampoco debería serlo. Dedica tiempo cada mes para revisar tu rendimiento y ajustar tus estrategias. Esto podría ser tan simple como una reunión de una hora con tu contador o una revisión individual utilizando tu panel de control.</p>\n<p>Con el tiempo, estas verificaciones constantes convertirán los informes financieros de algo intimidante en una herramienta de la que no podrás prescindir.</p>",
+    "_base_original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>. ;)</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>"
+  },
+  "report/from-chaos-to-more-control:page_description": {
+    "original": "Read all about chaos to control. Building a Financial System That Actually Works",
+    "value": "Read all about chaos to control. Building a Financial System That Actually Works",
+    "_base_original": "Read all about chaos to control. Building a Financial System That Actually Works"
+  },
+  "report/from-chaos-to-more-control:page_title": {
+    "original": "From Chaos to Control: Building a Financial System That Actually Works",
+    "value": "From Chaos to Control: Building a Financial System That Actually Works",
+    "_base_original": "From Chaos to Control: Building a Financial System That Actually Works"
+  },
+  "report/from-chaos-to-more-control:title": {
+    "original": "From Chaos to Control: Building a Financial System That Works",
+    "value": "De Caos a Control: Construyendo un Sistema Financiero Que Realmente Funcione",
+    "_base_original": "From Chaos to Control: Building a Financial System That Works"
+  },
+  "report/the-hidden-cost-of-manual-financial-tracking:body": {
+    "original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>!</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>",
+    "value": "<p>Dirigir un negocio ya es lo suficientemente difícil sin sentirse perdido en un mar de términos financieros. Si tus balances parecen crucigramas crípticos, no estás solo. ¿La buena noticia? No necesitas ser contador para obtener claridad financiera, solo necesitas el enfoque correcto.</p>\n<p><em>Hola, nosotros en <a href=\"https://bejamas.com/\">Bejamas</a> He creado esta plantilla, así que seguramente te gustaría echarle un vistazo. <a href=\"https://bejamas.com/work\">nuestras otras obras</a>¡Claro!</em></p>\n<h2 id=\"start-with-the-big-picture\">Comienza con la imagen general.</h2>\n<p>Antes de sumergirse en informes detallados, es importante entender qué es lo más importante para su negocio. Enfoque en un puñado de métricas clave, como el flujo de efectivo, los márgenes de beneficio y el crecimiento de ingresos, que realmente impulsan su toma de decisiones.</p>\n<p>En lugar de ahogarte en todos los informes posibles, crea un panel de control simple. Herramientas como QuickBooks o Xero pueden compilar automáticamente estos datos, brindándote información en tiempo real sin necesidad de hojas de cálculo manuales.</p>\n<h2 id=\"demystify-your-cash-flow\">Desmitifica tu flujo de efectivo</h2>\n<p>Los problemas de flujo de efectivo son una de las principales razones por las que las empresas tienen dificultades, pero también son una de las áreas más fáciles de mejorar con el sistema adecuado. Comienza por rastrear tus pagos entrantes y salientes semanalmente, no solo mensualmente.</p>\n<p>Considera configurar alertas automáticas con tu banco o software de contabilidad. De esa manera, sabrás al instante si un pago importante se retrasa, dándote tiempo para responder antes de que se convierta en una crisis. Este enfoque proactivo puede salvarte de tomar decisiones apresuradas de préstamos con altos intereses.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separar gastos personales y de negocios.</h2>\n<p>Mezclar las finanzas personales y comerciales es una receta para la confusión y las deducciones fiscales perdidas. Abre una cuenta comercial dedicada y, si es posible, obtén una tarjeta de crédito comercial para mantener separados todos los gastos de manera ordenada.</p>\n<p>No solo hará que la temporada de impuestos sea más sencilla, sino que también te ayudará a ver el verdadero rendimiento de tu negocio. Evitarás caer en la trampa de pensar que tu negocio es más rentable de lo que realmente es debido a los gastos personales que se cuelan en los libros.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Obtener orientación profesional (sin arruinarse)</h2>\n<p>Un buen contador no es solo para la temporada de impuestos, pueden ayudarte a planificar el crecimiento, identificar riesgos temprano y asegurarse de que estás aprovechando al máximo tu dinero. Si contratar a un director financiero a tiempo completo no es factible, considera externalizar a un servicio de director financiero virtual que pueda proporcionar conocimientos expertos por una fracción del costo.</p>\n<p>Piensa en esto como una inversión, no como un gasto. El socio financiero adecuado a menudo puede ahorrarte más de lo que cuestan al descubrir ineficiencias y oportunidades perdidas.</p>\n<h2 id=\"review-and-adjust-regularly\">Revisar y ajustar regularmente.</h2>\n<p>Las finanzas de tu negocio no son estáticas, por lo que tu comprensión de ellas tampoco debería serlo. Dedica tiempo cada mes para revisar tu rendimiento y ajustar tus estrategias. Esto podría ser tan simple como una reunión de una hora con tu contador o una revisión individual utilizando tu panel de control.</p>\n<p>Con el tiempo, estas verificaciones constantes convertirán los informes financieros de algo intimidante en una herramienta de la que no podrás prescindir.</p>",
+    "_base_original": "<p>Running a business is hard enough without feeling lost in a sea of financial jargon. If your balance sheets look like cryptic crossword puzzles, you’re not alone. The good news? You don’t need to become an accountant to gain financial clarity—you just need the right approach.</p>\n<p><em>Hey, we at <a href=\"https://bejamas.com/\">Bejamas</a> created this template, so for sure you would like to take a look at <a href=\"https://bejamas.com/work\">our other works</a>!</em></p>\n<h2 id=\"start-with-the-big-picture\">Start With the Big Picture</h2>\n<p>Before diving into detailed reports, it’s important to understand what matters most for your business. Focus on a handful of key metrics—like cash flow, profit margins, and revenue growth—that actually drive your decision-making.</p>\n<p>Instead of drowning in every possible report, create a simple dashboard. Tools like QuickBooks or Xero can automatically compile this data, giving you real-time insights without manual spreadsheets.</p>\n<h2 id=\"demystify-your-cash-flow\">Demystify Your Cash Flow</h2>\n<p>Cash flow problems are one of the top reasons businesses struggle, but they’re also one of the easiest areas to improve with the right system. Start by tracking your incoming and outgoing payments weekly—not just monthly.</p>\n<p>Consider setting up automated alerts with your bank or accounting software. That way, you’ll know instantly if a major payment is delayed, giving you time to respond before it becomes a crisis. This proactive approach can save you from making rushed, high-interest borrowing decisions.</p>\n<h2 id=\"separate-personal-and-business-expenses\">Separate Personal and Business Expenses</h2>\n<p>Mixing personal and business finances is a recipe for confusion and missed tax deductions. Open a dedicated business account and, if possible, get a business credit card to keep all expenses neatly separated.</p>\n<p>Not only will this make tax season smoother, but it will also help you see your business’s true performance. You’ll avoid the trap of thinking your business is more profitable than it really is because of personal spending creeping into the books.</p>\n<h2 id=\"get-professional-guidance-without-breaking-the-bank\">Get Professional Guidance (Without Breaking the Bank)</h2>\n<p>A good accountant isn’t just for tax season—they can help you plan for growth, spot risks early, and ensure you’re making the most of your money. If hiring a full-time CFO isn’t feasible, consider outsourcing to a virtual CFO service that can provide expert insights for a fraction of the cost.</p>\n<p>Think of this as an investment, not an expense. The right financial partner can often save you more than they cost by uncovering inefficiencies and missed opportunities.</p>\n<h2 id=\"review-and-adjust-regularly\">Review and Adjust Regularly</h2>\n<p>Your business finances aren’t static, so your understanding of them shouldn’t be either. Set aside time each month to review your performance and adjust your strategies. This could be as simple as a one-hour meeting with your accountant or a solo review using your dashboard.</p>\n<p>Over time, these consistent check-ins will turn financial reports from something intimidating into a tool you can’t live without.</p>"
+  },
+  "report/the-hidden-cost-of-manual-financial-tracking:page_description": {
+    "original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+    "value": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+    "_base_original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)"
+  },
+  "report/the-hidden-cost-of-manual-financial-tracking:page_title": {
+    "original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+    "value": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+    "_base_original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)"
+  },
+  "report/the-hidden-cost-of-manual-financial-tracking:title": {
+    "original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)",
+    "value": "El costo oculto del seguimiento financiero manual (y cómo solucionarlo)",
+    "_base_original": "The Hidden Cost of Manual Financial Tracking (And How to Fix It)"
+  },
+  "site:og_locale": {
+    "original": "en",
+    "value": "es",
+    "_base_original": "en"
+  },
+  "spain-campaign:16dd534c-27a4-483c-b77d-2a6083cf9a7d:button_label": {
+    "original": "Join the Campaign",
+    "value": "Únete a la Campaña",
+    "_base_original": "Join the Campaign"
+  },
+  "spain-campaign:16dd534c-27a4-483c-b77d-2a6083cf9a7d:heading_title": {
+    "original": "Membership",
+    "value": "Membresía",
+    "_base_original": "Membership"
+  },
+  "spain-campaign:16dd534c-27a4-483c-b77d-2a6083cf9a7d:headline": {
+    "original": "Ready to Join the Spain Campaign?",
+    "value": "¿Listo para unirte a la Campaña en España?",
+    "_base_original": "Ready to Join the Spain Campaign?"
+  },
+  "spain-campaign:225f2f14-d2cf-4421-ac25-f224468ce291:button_label": {
+    "original": "Learn More",
+    "value": "Aprende más",
+    "_base_original": "Learn More"
+  },
+  "spain-campaign:225f2f14-d2cf-4421-ac25-f224468ce291:headline": {
+    "original": "Bringing Financial Clarity to Spain's Growing Businesses",
+    "value": "Brindando claridad financiera a las empresas en crecimiento de España.",
+    "_base_original": "Bringing Financial Clarity to Spain's Growing Businesses"
+  },
+  "spain-campaign:225f2f14-d2cf-4421-ac25-f224468ce291:lead": {
+    "original": "We're launching a new initiative to help Spanish teams simplify compliance, reporting, and cross-border growth.",
+    "value": "Estamos lanzando una nueva iniciativa para ayudar a los equipos españoles a simplificar el cumplimiento, la presentación de informes y el crecimiento transfronterizo.",
+    "_base_original": "We're launching a new initiative to help Spanish teams simplify compliance, reporting, and cross-border growth."
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:11f5b80a-6c19-4bb4-badc-fe063e98c871:label": {
+    "original": "Customer Satisfaction",
+    "value": "Satisfacción del cliente",
+    "_base_original": "Customer Satisfaction"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:11f5b80a-6c19-4bb4-badc-fe063e98c871:number": {
+    "original": "95%",
+    "value": "95%",
+    "_base_original": "95%"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:30c951c8-be1b-427e-bf5e-f5be7eee8e4f:label": {
+    "original": "Tracked Annually",
+    "value": "Seguimiento anual",
+    "_base_original": "Tracked Annually"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:30c951c8-be1b-427e-bf5e-f5be7eee8e4f:number": {
+    "original": "€50M",
+    "value": "€50M",
+    "_base_original": "€50M"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:65a22adb-aa26-48c8-89c0-6670407aea40:label": {
+    "original": "Spanish Businesses Supported",
+    "value": "Negocios españoles apoyados",
+    "_base_original": "Spanish Businesses Supported"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:65a22adb-aa26-48c8-89c0-6670407aea40:number": {
+    "original": "1200+",
+    "value": "1200+",
+    "_base_original": "1200+"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:c1337bfe-3e20-46ac-b01e-17f24f6a0814:label": {
+    "original": "Active in Madrid and More",
+    "value": "Activo en Madrid y más",
+    "_base_original": "Active in Madrid and More"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:c1337bfe-3e20-46ac-b01e-17f24f6a0814:number": {
+    "original": "5+",
+    "value": "5+",
+    "_base_original": "5+"
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:lead": {
+    "original": "Our platform helps Spanish businesses cut through complex compliance.",
+    "value": "Nuestra plataforma ayuda a las empresas españolas a simplificar el cumplimiento normativo.",
+    "_base_original": "Our platform helps Spanish businesses cut through complex compliance."
+  },
+  "spain-campaign:2badd69e-a10f-495f-96fe-eaec3735e06d:title": {
+    "original": "Why Spain, Why Now?",
+    "value": "¿Por qué España, ¿por qué ahora?",
+    "_base_original": "Why Spain, Why Now?"
+  },
+  "spain-campaign:page_title": {
+    "original": "Spain Campaign",
+    "value": "Spain Campaign",
+    "_base_original": "Spain Campaign"
+  }
+}

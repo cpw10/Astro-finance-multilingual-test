@@ -1,0 +1,56 @@
+---
+import Button from '@/components/Button.astro'
+import PartnersSection from '@/components/PartnersSection.astro'
+import { imageUrl } from '@/lib/images'
+
+const { _uuid, image, headline, lead, button, partners } = Astro.props
+
+// One crop per breakpoint, all 685px tall, generated from the stored image at build time.
+const crop = (width: number) => imageUrl(image?.src, { width, height: 685, fit: 'cover' })
+const [small, medium, large] = await Promise.all([crop(640), crop(1024), crop(1440)])
+---
+
+<section data-rosey-ns={_uuid} class="group">
+
+  <div class="relative min-h-[82vh] flex items-end pt-40 before:absolute before:inset-0 before:bg-black/55 before:mix-blend-multiply before:z-10">
+
+    {large && (
+      <picture class="absolute z-0 w-full h-full object-cover object-top">
+        <source srcset={small} media="(max-width: 640px)" />
+        <source srcset={medium} media="(max-width: 1024px)" />
+        <source srcset={large} media="(max-width: 1440px)" />
+        <img
+          src={large}
+          alt={image?.alt ?? ''}
+          class="absolute z-0 w-full h-full object-cover object-top"
+          data-editable="image"
+          data-prop="image"
+        />
+      </picture>
+    )}
+
+    <div class="relative z-20 w-full pt-10">
+      <div class="max-w-[624px] mx-auto mb-28 px-6 flex flex-col gap-y-8 justify-center items-center">
+        <div class="max-w-[624px] text-center">
+          <h2 class="text-white text-3xl md:text-5xl leading-[110%] -tracking-[1.92px] font-heading mb-4" data-editable="text" data-prop="headline" data-rosey="headline">{headline}</h2>
+
+          {lead && (
+            <p class="text-white leading-[150%] -tracking-[0.32px]" data-editable="text" data-prop="lead" data-rosey="lead">{lead}</p>
+          )}
+        </div>
+
+        {button?.label?.trim() && (
+          <Button label={button.label} href={button.url} variant={button.style} classes="cta-button" labelProp="button.label" />
+        )}
+      </div>
+
+      <div class="max-w-[1016px] mx-auto px-6">
+        {partners && (
+          <PartnersSection title={partners.title} partners={partners.partners} />
+        )}
+      </div>
+
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,33 @@
+label: Stats
+description: A title and lead text above a row of key figures, four per row.
+icon: bar_chart
+picker_preview:
+  text:
+    - Stats
+  icon:
+    - bar_chart
+preview:
+  text:
+    - key: title
+    - Stats
+  icon:
+    - bar_chart
+value:
+  _type: stats_section
+  _uuid:
+  title:
+  lead:
+  stats: []
+_inputs:
+  title:
+    type: text
+    cascade: false
+    label: Title
+  lead:
+    type: textarea
+    label: Lead text
+  stats:
+    type: array
+    label: Stats
+    options:
+      structures: _structures.stats

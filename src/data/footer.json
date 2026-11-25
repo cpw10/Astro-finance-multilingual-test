@@ -1,0 +1,19 @@
+{
+  "company_heading": "Company Details",
+  "company_description": "We build intuitive financial tools that help growing teams track, understand, and manage their money",
+  "phone": "+1 222 333 444",
+  "email": "contact@company.com",
+  "copyright": "All Rights Reserved",
+  "legal_links": [
+    {
+      "_uuid": "fc9864b3-e323-4224-9d9f-a5ef2e20ee4a",
+      "label": "Terms & Conditions",
+      "url": "/terms/"
+    },
+    {
+      "_uuid": "2b961611-aa84-451e-bddf-d117455d3fe6",
+      "label": "Privacy Policy",
+      "url": "/policies/"
+    }
+  ]
+}

@@ -2,37 +2,76 @@
 import "../styles/global.css"
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import { getDatasource } from '../utils/api'
+import site from '@/data/site.json'
+import navigation from '@/data/navigation.json'
+import footer from '@/data/footer.json'
+import { defaultLocale, roseyAttrs } from '@/lib/rosey'
 
-const { siteSettings, language, langSwitch, translate, blok } = Astro.props
-const seo = blok.metatags
+// `title` is the page name, used when the SEO title is empty.
+// `roseyRoot` is the page's translation namespace (see src/lib/rosey.ts). The page passes the
+// same value it puts on its content, so the head keys sit beside the page's other keys.
+const { title, metatags, roseyRoot } = Astro.props
+const seo = metatags ?? {}
 
-const colors = await getDatasource('colors')
-const primaryColor = colors.primary
+// Rosey copies the <head> into each translated page unchanged, so every text in it needs its
+// own key. Attribute values use the explicit form: one key per attribute and no dots in the key.
+const headKey = (name: string) => (roseyRoot ? `${roseyRoot}:${name}` : undefined)
+const content = (name: string) => {
+  const key = headKey(name)
+  return key ? { 'data-rosey-attrs-explicit': roseyAttrs({ content: key }) } : {}
+}
+
+// Share images are stored as public paths (/images/...). Social networks need
+// absolute URLs, so they are resolved against `site` once it is set in astro.config.mjs.
+const absolute = (path?: string | null) =>
+  path && Astro.site ? new URL(path, Astro.site).href : path
+const ogImage = absolute(seo.og_image)
+const twitterImage = absolute(seo.twitter_image)
 ---
 
 <!DOCTYPE html>
-<html lang={language}>
+<html lang={defaultLocale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{seo?.title}</title>
-    <meta property="og:title" content={seo?.og_title} />
-    <meta name="twitter:title" content={seo?.twitter_title} />
-    <meta name="description" content={seo?.description} />
-    <meta property="og:description" content={seo?.og_description} />
-    <meta name="twitter:description" content={seo?.twitter_description} />
-    <meta property="og:locale" content={language} />
+    <title data-rosey={headKey('page_title')}>{seo.title || title}</title>
+    {seo.og_title && <meta property="og:title" content={seo.og_title} {...content('og_title')} />}
+    {seo.twitter_title && <meta name="twitter:title" content={seo.twitter_title} {...content('twitter_title')} />}
+    {seo.description && <meta name="description" content={seo.description} {...content('page_description')} />}
+    {seo.og_description && <meta property="og:description" content={seo.og_description} {...content('og_description')} />}
+    {seo.twitter_description && <meta name="twitter:description" content={seo.twitter_description} {...content('twitter_description')} />}
+    <meta property="og:locale" content={defaultLocale} data-rosey-attrs-explicit={roseyAttrs({ content: 'site:og_locale' })} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="" />
-    <meta name="twitter:card" content={seo?.twitter_image ? "summary_large_image" : "summary"} />
-    <meta property="og:image" content={seo?.og_image} />
-    <meta name="twitter:image" content={seo?.twitter_image} />
+    <meta name="twitter:card" content={twitterImage ? "summary_large_image" : "summary"} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {twitterImage && <meta name="twitter:image" content={twitterImage} />}
   </head>
-  <body class="antialiased" style={`--primary: ${primaryColor};`}>
-    <Header siteSettings={siteSettings} langSwitch={langSwitch} language={language} translate={translate} />
-    <slot />
-    <Footer siteSettings={siteSettings} language={language} translate={translate} />
+  <body class="antialiased" style={`--primary: ${site.primary_color};`}>
+    {/* `data-rcc` marks what the Rosey connector swaps when a translator changes language in
+        CloudCannon's Visual Editor. Scripts stay outside it. */}
+    <div data-rcc>
+      <editable-component class="block" data-component="header" data-prop="@data[navigation]">
+        <Header {...navigation} pathname={Astro.url.pathname} />
+      </editable-component>
+      <slot />
+      <editable-component class="block" data-component="footer" data-prop="@data[footer]">
+        <Footer {...footer} />
+      </editable-component>
+    </div>
+
+    <script>
+      // CloudCannon's Visual Editor sets `inEditorMode`. Only there, load the code that makes
+      // the editable regions live and re-renders components, and the translation connector.
+      if ((window as any).inEditorMode) {
+        import('../cloudcannon/registerComponents').catch((error) => {
+          console.warn('Failed to load CloudCannon component registration:', error)
+        })
+        // The Rosey connector adds the translators' language switcher and inline translation editors.
+        import('rosey-cloudcannon-connector').catch((error) => {
+          console.warn('Failed to load the Rosey CloudCannon connector:', error)
+        })
+      }
+    </script>
   </body>
 </html>

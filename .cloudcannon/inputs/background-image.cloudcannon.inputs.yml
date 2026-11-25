@@ -1,0 +1,8 @@
+image:
+  type: image
+  label: Background image
+  comment: Fills the background of the section, behind the text. Resized and compressed automatically when the site builds.
+  options:
+    paths:
+      uploads: /src/assets/images
+      static: ""

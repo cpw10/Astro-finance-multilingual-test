@@ -1,0 +1,23 @@
+---
+// One quote of the testimonials block. Rendered on its own so the Visual Editor can re-render a single item.
+// `_uuid` namespaces this item's Rosey translation keys, so they survive a reorder.
+const { _uuid, quote, author_name, author_title } = Astro.props
+---
+
+<p class="text-black text-2xl lg:text-4xl leading-[140%] font-heading mb-4" data-rosey-ns={_uuid}>“<span data-editable="text" data-prop="quote" data-rosey="quote">{quote}</span>“</p>
+<div class="flex gap-2 items-center p-3 text-black bg-[#F4F5F5]" data-rosey-ns={_uuid}>
+  <div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="15.7648" fill="url(#paint0_radial_313_2030)" stroke="#FAF8C8" stroke-width="0.4704"/>
+      <defs>
+      <radialGradient id="paint0_radial_313_2030" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16 16) rotate(90) scale(16)">
+      <stop stop-color="#F77600"/>
+      <stop offset="1" stop-color="#F7DE00"/>
+      </radialGradient>
+      </defs>
+    </svg>
+  </div>
+  <div>
+    <strong data-editable="text" data-prop="author_name">{author_name}</strong>, <span data-editable="text" data-prop="author_title" data-rosey="author_title">{author_title}</span>
+  </div>
+</div>

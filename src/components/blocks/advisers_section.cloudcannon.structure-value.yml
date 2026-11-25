@@ -1,0 +1,29 @@
+label: Advisers
+description: A title above a list of advisers, one per row.
+icon: supervisor_account
+picker_preview:
+  text:
+    - Advisers
+  icon:
+    - supervisor_account
+preview:
+  text:
+    - key: title
+    - Advisers
+  icon:
+    - supervisor_account
+value:
+  _type: advisers_section
+  _uuid:
+  title:
+  advisers: []
+_inputs:
+  title:
+    type: text
+    cascade: false
+    label: Title
+  advisers:
+    type: array
+    label: Advisers
+    options:
+      structures: _structures.advisers

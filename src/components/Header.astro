@@ -1,17 +1,24 @@
 ---
 import { Button } from '@/components/ui/button'
 import { HamburgerMenu, HamburgerMenuItem } from '@/components/ui/hamburger-menu'
-import { getTransLink } from '../utils/i18n'
-import { getHref } from '../utils/getHref'
 import LanguageSwitcher from './LanguageSwitcher.astro'
-const { language, translate, langSwitch, siteSettings } = Astro.props
+import site from '@/data/site.json'
+import { roseyTextKey } from '@/lib/rosey'
 
-const navigation = siteSettings.navigation.length ? siteSettings.navigation : []
+// Props are the keys of src/data/navigation.json: Layout.astro spreads the file in, and
+// CloudCannon's Visual Editor passes the edited file the same way when it re-renders the header.
+const { cta } = Astro.props
+// `pathname` comes from Layout.astro at build time. It is missing when the Visual Editor
+// re-renders the header, and the language switcher is left out there (the editor has its own).
+const { pathname } = Astro.props
+const items = Astro.props.items ?? []
 const glassButton = 'button--glass h-auto rounded-sm bg-black/20 font-normal text-white backdrop-blur-sm hover:bg-black/20 hover:text-white'
 const hamburgerLine = 'block h-0.5 w-full bg-white duration-300'
+// Translation keys (Rosey): `nav:<label as a slug>` for links, shared with the mobile menu and the
+// footer navigation, and `nav:cta_label` for the button.
 ---
 
-<header class="absolute top-0 right-0 left-0 border-b border-border z-50" id="header">
+<header class="absolute top-0 right-0 left-0 border-b border-border z-50" id="header" data-rosey-ns="nav">
   <HamburgerMenu
     class="bg-transparent"
     triggerLabel="Toggle Navigation"
@@ -20,17 +27,21 @@ const hamburgerLine = 'block h-0.5 w-full bg-white duration-300'
     panelClass="fixed inset-0 h-auto bg-primary p-0 text-2xl text-white shadow-none transition-transform duration-300 data-[ending-style]:translate-x-full data-[starting-style]:translate-x-full data-[starting-style]:transition-none md:hidden [&>nav]:justify-center [&_[data-slot=hamburger-menu-items]]:items-center [&_[data-slot=hamburger-menu-items]]:gap-8"
   >
     <!-- Logo -->
-    <a slot="brand" class="block" href={getTransLink(language, `/`)}>
-      <img src={siteSettings.logo.filename} alt={siteSettings.logo.alt} />
+    <a slot="brand" class="block" href="/">
+      {site.logo?.src && <img src={site.logo.src} alt={site.logo.alt ?? ''} data-editable="image" data-prop="@data[site].logo" />}
     </a>
 
     <!-- Desktop navigation -->
     <nav slot="actions" class="hidden md:block">
-      <ul class="flex items-center justify-center text-[0.81rem] leading-[calc(2/1.5)] text-white">
-        {navigation.map((navItem) => (
-          <li>
-            <a href={getHref(navItem.url)} class="block px-4 py-2 capitalize hover:opacity-80">
-              {navItem.label}
+      <ul
+        class="flex items-center justify-center text-[0.81rem] leading-[calc(2/1.5)] text-white"
+        data-editable="array"
+        data-prop="items"
+      >
+        {items.map((item) => (
+          <li data-editable="array-item">
+            <a href={item.url || '#'} class="block px-4 py-2 capitalize hover:opacity-80">
+              <span data-editable="text" data-prop="label" data-rosey={roseyTextKey(item.label)}>{item.label}</span>
             </a>
           </li>
         ))}
@@ -39,15 +50,17 @@ const hamburgerLine = 'block h-0.5 w-full bg-white duration-300'
 
     <!-- Right side -->
     <div slot="actions" class="flex items-center gap-4 md:justify-self-end">
-      <LanguageSwitcher langSwitch={langSwitch} language={language} />
-      <Button
-        as="a"
-        href={getTransLink(language, ``)}
-        variant="ghost"
-        class:list={[glassButton, 'hidden px-3 py-1.5 text-sm md:inline-flex']}
-      >
-        {translate.becomeMember}
-      </Button>
+      {pathname && <LanguageSwitcher pathname={pathname} />}
+      {cta?.label?.trim() && (
+        <Button
+          as="a"
+          href={cta.url || '#'}
+          variant="ghost"
+          class:list={[glassButton, 'hidden px-3 py-1.5 text-sm md:inline-flex']}
+        >
+          <span data-editable="text" data-prop="cta.label" data-rosey="cta_label">{cta.label}</span>
+        </Button>
+      )}
     </div>
 
     <!-- Hamburger icon -->
@@ -57,26 +70,28 @@ const hamburgerLine = 'block h-0.5 w-full bg-white duration-300'
       <span class:list={[hamburgerLine, 'transition-transform group-data-[state=open]/hamburger-menu:-translate-y-[9px] group-data-[state=open]/hamburger-menu:-rotate-45']}></span>
     </Fragment>
 
-    <!-- Mobile navigation -->
-    {navigation.map((navItem) => (
+    <!-- Mobile navigation: a second copy of the links and the button, kept in step by the header re-render -->
+    {items.map((item) => (
       <HamburgerMenuItem
-        href={getHref(navItem.url)}
+        href={item.url || '#'}
         class="rounded-none px-4 py-2 text-2xl font-normal text-white capitalize hover:text-white hover:opacity-80"
       >
-        {navItem.label}
+        <span data-rosey={roseyTextKey(item.label)}>{item.label}</span>
       </HamburgerMenuItem>
     ))}
 
     <!-- Mobile CTA at bottom -->
     <div>
-      <Button
-        as="a"
-        href={getTransLink(language, ``)}
-        variant="ghost"
-        class:list={[glassButton, 'inline px-6 py-3 text-lg']}
-      >
-        {translate.becomeMember}
-      </Button>
+      {cta?.label?.trim() && (
+        <Button
+          as="a"
+          href={cta.url || '#'}
+          variant="ghost"
+          class:list={[glassButton, 'inline px-6 py-3 text-lg']}
+        >
+          <span data-rosey="cta_label">{cta.label}</span>
+        </Button>
+      )}
     </div>
   </HamburgerMenu>
 </header>

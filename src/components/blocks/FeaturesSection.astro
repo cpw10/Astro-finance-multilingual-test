@@ -1,0 +1,25 @@
+---
+import FeatureItem from '@/components/items/FeatureItem.astro'
+
+const { _uuid, title, features } = Astro.props
+---
+
+<section data-rosey-ns={_uuid}>
+  <div class="container mx-auto px-6">
+    {title && <h2 class="text-black text-3xl md:text-5xl leading-[120%] font-heading mb-8 px-6 max-w-[430px]" data-editable="text" data-prop="title" data-rosey="title">{title}</h2>}
+
+    <ul
+      class="grid md:grid-cols-3 gap-6"
+      data-editable="array"
+      data-prop="features"
+      data-component="feature_item"
+      data-direction="row"
+    >
+      {features?.map((feature) => (
+        <li data-editable="array-item" data-component="feature_item">
+          <FeatureItem {...feature} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

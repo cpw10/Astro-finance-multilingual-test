@@ -1,0 +1,12 @@
+{
+  "logo": {
+    "src": "/images/global-finance-starter.svg",
+    "alt": ""
+  },
+  "primary_color": "#193EAF",
+  "report": {
+    "label": "Report",
+    "author_label": "Author",
+    "back_label": "Return to all reports"
+  }
+}

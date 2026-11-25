@@ -1,5 +1,9 @@
 # build output
 dist/
+# English-only copy of the build that the translation step (.cloudcannon/postbuild) leaves behind
+_untranslated_site/
+# work file of the translate-site scripts
+rosey/locales/.translation-task-*.json
 # generated types
 .astro/
 
@@ -25,3 +29,6 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
+
+# CloudCannon JSON schemas (downloaded reference files)
+.cloudcannon/migration/*.schema.json

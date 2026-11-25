@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets'
+import { Card } from '@/components/ui/card'
+import Button from '@/components/Button.astro'
+import Heading from '@/components/Heading.astro'
+import { flatCard } from '@/lib/ui'
+import { resolveImage } from '@/lib/images'
+
+const { _uuid, heading, headline, lead, image, button } = Astro.props
+const imageSrc = resolveImage(image?.src)
+---
+
+<section data-rosey-ns={_uuid}>
+  <div class="container mx-auto px-6">
+    <Card class:list={[flatCard, 'grid gap-16 p-6 md:grid-cols-2 md:p-16']}>
+      <div class="flex flex-col justify-between items-start gap-8">
+        {heading?.title && (
+          <Heading title={heading.title} icon={heading.icon} variant={heading.style} />
+        )}
+        <div class="flex flex-col justify-center items-start grow max-w-[476px]">
+          <h3 class="text-black text-3xl lg:text-5xl leading-[120%] font-heading mb-4" data-editable="text" data-prop="headline" data-rosey="headline">{headline}</h3>
+          {lead && (
+            <p class="mb-8 text-black opacity-65" data-editable="text" data-prop="lead" data-rosey="lead">{lead}</p>
+          )}
+        </div>
+        {button?.label?.trim() && (
+          <Button label={button.label} href={button.url} variant={button.style} labelProp="button.label" />
+        )}
+      </div>
+      <div>
+        {imageSrc && (
+          <Image
+            src={imageSrc}
+            alt={image?.alt ?? ''}
+            width={453}
+            height={543}
+            layout="full-width"
+            loading="lazy"
+            data-editable="image"
+            data-prop="image"
+          />
+        )}
+      </div>
+    </Card>
+  </div>
+</section>

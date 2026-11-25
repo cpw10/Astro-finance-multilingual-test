@@ -1,0 +1,18 @@
+image:
+  type: object
+  label: Image
+  options:
+    preview:
+      icon: image
+image.src:
+  type: image
+  label: Image file
+  comment: Photos are resized and compressed automatically when the site builds.
+  options:
+    paths:
+      uploads: /src/assets/images
+      static: ""
+image.alt:
+  type: text
+  label: Alt text
+  comment: Describes the image for screen readers. Leave empty when the image is decorative.

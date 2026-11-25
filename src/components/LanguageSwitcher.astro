@@ -5,47 +5,94 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { getLanguages, getLanguageLabel, getLanguageFlag } from '../utils/i18n'
+import { defaultLocale, locales, roseyAttrs } from '@/lib/rosey'
 
-const languages = await getLanguages()
-const { language, langSwitch } = Astro.props
+// Visitor-facing language switcher. Rosey builds the other languages after the Astro build by
+// copying each page into `/<locale>/`, so this component only ever renders on a default-language
+// URL and must work unchanged on the copies:
+// - every link carries `data-rosey-ignore`, or Rosey would prefix the links a second time;
+// - the flag on the button and the current item are chosen from `<html lang>`, which Rosey sets.
+const { pathname = '/' } = Astro.props
+
+const codes = locales.map((locale) => locale.code)
+const segments = pathname.split('/').filter(Boolean)
+const basePath = codes.includes(segments[0])
+  ? '/' + segments.slice(1).join('/') + (segments.length > 1 ? '/' : '')
+  : pathname
+
+// The default language is served at the site root, every other language under `/<code>/`.
+const localeUrl = (code: string) => (code === defaultLocale ? basePath || '/' : `/${code}${basePath}`)
+
+const FLAGS: Record<string, string> = {
+  en: `<g clip-path="url(#ID)"><rect width="22" height="16" x="-3" fill="#1A47B8" rx="2"/><path fill="#fff" fill-rule="evenodd" d="M-.66 0H-3v2.667L16.647 16H19v-2.667L-.66 0Z" clip-rule="evenodd"/><path fill="#F93939" d="M-2.22 0 19 14.438V16h-.762L-3 1.547V0h.78Z"/><path fill="#fff" fill-rule="evenodd" d="M16.905 0H19v2.667S5.391 11.55-.905 16H-3v-2.667L16.905 0Z" clip-rule="evenodd"/><path fill="#F93939" d="M19 0h-.71L-3 14.45V16h.78L19 1.559V0Z"/><path fill="#fff" fill-rule="evenodd" d="M5 0h6.018v4.935H19v6.127h-7.982V16H5v-4.938H-3V4.935h8V0Z" clip-rule="evenodd"/><path fill="#F93939" fill-rule="evenodd" d="M6.263 0h3.474v6.154H19v3.692H9.737V16H6.263V9.846H-3V6.154h9.263V0Z" clip-rule="evenodd"/></g><defs><clipPath id="ID"><rect width="22" height="16" x="-3" fill="#fff" rx="2"/></clipPath></defs>`,
+  es: `<g clip-path="url(#ID)"><rect width="22" height="16" x="-3" fill="#F93939" rx="2"/><path fill="#F93939" d="M16.905 0H-.905C-2.062 0-3 .955-3 2.133v11.734C-3 15.045-2.062 16-.905 16h17.81C18.062 16 19 15.045 19 13.867V2.133C19 .955 18.062 0 16.905 0Z"/><path fill="#FFDA2C" fill-rule="evenodd" d="M-3 4.267h22v7.466H-3V4.267Z" clip-rule="evenodd"/><path fill="#D4AF2C" fill-rule="evenodd" d="M6.429 6.637v2.688c0 .747-.704 1.344-1.572 1.344H2.762c-.865-.002-1.572-.603-1.572-1.346V6.635c0-.61.47-1.12 1.115-1.286.195-.554.794-.057 1.504-.057.715 0 1.31-.494 1.505.058.643.17 1.115.68 1.115 1.287Z" clip-rule="evenodd"/><path fill="#CBCBCB" fill-rule="evenodd" d="M6.429 7.467h1.047v3.2H6.43v-3.2Zm-6.286 0H1.19v3.2H.143v-3.2Z" clip-rule="evenodd"/><path fill="#1A47B8" fill-rule="evenodd" d="M6.429 9.6h1.047v1.067H6.43V9.6Zm-6.286 0H1.19v1.067H.143V9.6Z" clip-rule="evenodd"/><path fill="#D4AF2C" fill-rule="evenodd" d="M6.429 6.4h1.047v1.067H6.43V6.4Zm-6.286 0H1.19v1.067H.143V6.4Z" clip-rule="evenodd"/><path fill="#AF010D" fill-rule="evenodd" d="M2.238 6.4h1.048V8H2.238V6.4Zm2.095 2.133h1.048v1.6H4.333v-1.6Z" clip-rule="evenodd"/><path fill="#AE6A3E" fill-rule="evenodd" d="M4.333 6.4h1.048V8H4.333V6.4Z" clip-rule="evenodd"/><path fill="#FFDA2C" fill-rule="evenodd" d="M2.238 8.533h1.048v1.6H2.238v-1.6Z" clip-rule="evenodd"/><path fill="#AF010D" fill-rule="evenodd" d="M3.286 6.4 2.238 5.333h3.143L4.333 6.4H3.286Z" clip-rule="evenodd"/><path fill="#D4AF2C" fill-rule="evenodd" d="M3.286 4.267h1.047v1.066H3.286V4.267Z" clip-rule="evenodd"/></g><defs><clipPath id="ID"><rect width="22" height="16" x="-3" fill="#fff" rx="2"/></clipPath></defs>`,
+}
+// Each flag clips itself with an id, and a flag is drawn twice (button and menu).
+const flag = (code: string, place: string) => (FLAGS[code] ?? '').replaceAll('ID', `flag-${code}-${place}`)
+
+// Show only the flag of the page's language on the button.
+const flagRules =
+  '[data-locale-flag]{display:none}' +
+  codes.map((code) => `html[lang="${code}"] [data-locale-flag="${code}"]{display:block}`).join('')
 ---
 
-<DropdownMenu data-language-switcher>
-  <DropdownMenuTrigger
-    variant="ghost"
-    class="h-auto cursor-pointer gap-0.5 rounded-sm border-0 p-1.5 hover:bg-transparent has-[>svg]:px-1.5 aria-expanded:bg-transparent"
-    aria-label="Select language"
-  >
-    <svg class="rounded-full" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" set:html={getLanguageFlag(language)} />
-    <svg class="-scale-100" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4 10L8 6L12 10" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </DropdownMenuTrigger>
-  <DropdownMenuContent
-    align="center"
-    sideOffset={8}
-    class="flex w-[160px] min-w-0 flex-col gap-y-1.5 p-2 shadow-none ring-0"
-  >
-    {languages.map((lang) => (
-      <DropdownMenuItem class="p-0" value={lang}>
-        <a
-          href={langSwitch[lang]}
-          class="flex w-full items-center gap-1 rounded-sm p-1 text-xs capitalize outline-none"
-          tabindex="-1"
-        >
-          <svg aria-hidden="true" class="rounded-full" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" set:html={getLanguageFlag(lang)} />
-          {getLanguageLabel(lang)}
-        </a>
-      </DropdownMenuItem>
-    ))}
-  </DropdownMenuContent>
-</DropdownMenu>
+<nav aria-label="Language" class="flex items-center" data-language-switcher>
+  <style is:inline set:html={flagRules}></style>
+  <DropdownMenu>
+    <DropdownMenuTrigger
+      variant="ghost"
+      class="h-auto cursor-pointer gap-0.5 rounded-sm border-0 p-1.5 hover:bg-transparent has-[>svg]:px-1.5 aria-expanded:bg-transparent"
+      aria-label="Select language"
+      data-rosey-attrs-explicit={roseyAttrs({ 'aria-label': 'select_language' })}
+    >
+      {locales.map(({ code }) => (
+        <svg data-locale-flag={code} class="rounded-full" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" set:html={flag(code, 'button')} />
+      ))}
+      <svg class="-scale-100" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 10L8 6L12 10" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </DropdownMenuTrigger>
+    <DropdownMenuContent
+      align="center"
+      sideOffset={8}
+      class="flex w-[160px] min-w-0 flex-col gap-y-1.5 p-2 shadow-none ring-0"
+    >
+      {locales.map(({ code, label }) => (
+        <DropdownMenuItem class="p-0" value={code}>
+          <a
+            href={localeUrl(code)}
+            hreflang={code}
+            lang={code}
+            class="flex w-full items-center gap-1 rounded-sm p-1 text-xs capitalize outline-none aria-[current=true]:font-medium"
+            tabindex="-1"
+            data-rosey-ignore
+          >
+            <svg aria-hidden="true" class="rounded-full" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" set:html={flag(code, 'menu')} />
+            {label}
+          </a>
+        </DropdownMenuItem>
+      ))}
+    </DropdownMenuContent>
+  </DropdownMenu>
+</nav>
 
 <script>
-  // Menu items are links: a keyboard selection (Enter/Space) follows the link inside the item.
-  document.querySelectorAll('[data-language-switcher]').forEach((root) => {
-    root.addEventListener('dropdown-menu:select', (event) => {
+  document.querySelectorAll<HTMLElement>('nav[data-language-switcher]').forEach((nav) => {
+    // CloudCannon's Visual Editor has its own language switcher (the Rosey connector's);
+    // this one would fight it, so it is hidden there.
+    if ((window as any).inEditorMode) {
+      nav.style.display = 'none'
+      return
+    }
+
+    // The built HTML is the default-language page, so the current language is marked here.
+    const current = document.documentElement.lang
+    nav.querySelectorAll<HTMLAnchorElement>('a[hreflang]').forEach((link) => {
+      if (link.hreflang === current) link.setAttribute('aria-current', 'true')
+    })
+
+    // Menu items are links: a keyboard selection (Enter/Space) follows the link inside the item.
+    nav.addEventListener('dropdown-menu:select', (event) => {
       const { source, item } = (event as CustomEvent<{ source?: string; item?: HTMLElement }>).detail
       if (source === 'keyboard') item?.querySelector('a')?.click()
     })

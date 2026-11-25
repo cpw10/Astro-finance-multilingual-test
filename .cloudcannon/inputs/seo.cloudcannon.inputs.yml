@@ -1,0 +1,35 @@
+metatags:
+  type: object
+  label: SEO and social sharing
+  comment: What search engines and social networks show for this page.
+  options:
+    preview:
+      icon: search
+metatags.title:
+  type: text
+  label: SEO title
+  comment: Shown in the browser tab and in search results.
+  options:
+    required: false
+metatags.description:
+  type: textarea
+  label: SEO description
+metatags.og_title:
+  type: text
+  label: Social title
+metatags.og_description:
+  type: textarea
+  label: Social description
+metatags.og_image:
+  type: image
+  label: Social image
+metatags.twitter_title:
+  type: text
+  label: X (Twitter) title
+metatags.twitter_description:
+  type: textarea
+  label: X (Twitter) description
+metatags.twitter_image:
+  type: image
+  label: X (Twitter) image
+  comment: When set, the page is shared as a large image card.

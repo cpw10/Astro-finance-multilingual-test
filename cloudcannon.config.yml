@@ -1,0 +1,688 @@
+paths:
+  static: public
+  uploads: public/images
+timezone: Etc/UTC
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
+    table: true
+    strikethrough: true
+collection_groups:
+  - heading: Content
+    collections:
+      - pages
+      - reports
+  - heading: Site settings
+    collections:
+      - data
+  - heading: Translations
+    collections:
+      - locales
+collections_config:
+  pages:
+    path: src/content/pages
+    name: Pages
+    singular_name: Page
+    description: Landing pages built from sections, including the home page and the reports index.
+    icon: wysiwyg
+    url: "/[slug]/"
+    glob:
+      - "*.md"
+    disable_add_folder: true
+    new_preview_url: /
+    _enabled_editors:
+      - visual
+      - data
+    create:
+      path: "[relative_base_path]/{title|slugify}.[ext]"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/page.md
+        name: Page
+        icon: wysiwyg
+    add_options:
+      - name: Page
+        schema: default
+        icon: wysiwyg
+    _inputs_from_glob:
+      - /.cloudcannon/inputs/seo.cloudcannon.inputs.yml
+    _inputs:
+      title:
+        type: text
+        label: Page name
+        comment: Names the page in this list and sets the file name of a new page. Also used as the browser tab title when the SEO title is empty.
+        options:
+          required: true
+      content_blocks:
+        type: array
+        label: Sections
+        comment: The sections of the page, from top to bottom.
+        options:
+          structures: _structures.content_blocks
+  reports:
+    path: src/content/reports
+    name: Reports
+    singular_name: Report
+    description: Long-form reports. Each one gets its own page and a card on the reports index.
+    icon: article
+    url: "/report/[slug]/"
+    glob:
+      - "*.md"
+    disable_add_folder: true
+    new_preview_url: /report/clarity-over-complexity/
+    _enabled_editors:
+      - visual
+      - content
+      - data
+    create:
+      path: "[relative_base_path]/{title|slugify}.[ext]"
+    sort_options:
+      - key: published_date
+        order: descending
+        label: Newest first
+      - key: published_date
+        order: ascending
+        label: Oldest first
+      - key: title
+        order: ascending
+        label: Title (A-Z)
+    preview:
+      text:
+        - key: title
+      subtext:
+        - key: author
+      icon:
+        - article
+    schemas:
+      default:
+        path: .cloudcannon/schemas/report.md
+        name: Report
+        icon: article
+    add_options:
+      - name: Report
+        schema: default
+        icon: article
+    _inputs_from_glob:
+      - /.cloudcannon/inputs/seo.cloudcannon.inputs.yml
+      - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+    _inputs:
+      title:
+        type: text
+        label: Title
+        options:
+          required: true
+      author:
+        type: text
+        label: Author
+      published_date:
+        type: datetime
+        label: Published date
+        comment: Shown on the report and used to order the reports index, newest first.
+        instance_value: NOW
+        options:
+          required: true
+  data:
+    path: src/data
+    name: Site settings
+    description: Content shared by every page - logo, brand colour, navigation and footer.
+    icon: settings
+    glob:
+      - "*.json"
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    _enabled_editors:
+      - data
+  locales:
+    path: rosey/locales
+    name: Translations
+    description: One file per language, holding the translation of every text on the site. Most translating is done on the page itself; open a file here for text that is not visible on a page, such as SEO titles and descriptions.
+    icon: translate
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    _inputs:
+      value:
+        type: html
+        label: Translation
+        cascade: true
+      original:
+        hidden: true
+        cascade: true
+      _base_original:
+        disabled: true
+        cascade: true
+data_config:
+  locales_es:
+    path: rosey/locales/es.json
+  site:
+    path: src/data/site.json
+  navigation:
+    path: src/data/navigation.json
+  footer:
+    path: src/data/footer.json
+file_config:
+  - glob: src/data/site.json
+    _inputs:
+      $:
+        type: object
+        options:
+          preview:
+            icon: settings
+      logo:
+        type: object
+        label: Logo
+        comment: Shown in the header and the footer.
+        options:
+          preview:
+            icon: image
+      logo.src:
+        type: image
+        label: Logo image
+        comment: An SVG with light artwork works best, because the header and footer are dark.
+      logo.alt:
+        type: text
+        label: Logo alt text
+        comment: Describes the logo for screen readers.
+      primary_color:
+        type: color
+        label: Brand colour
+        comment: Used for buttons, highlighted stats, heading badges and links in reports. The page preview shows the new colour after you save.
+        options:
+          format: hex
+          alpha: false
+          required: true
+      report:
+        type: object
+        label: Report page labels
+        comment: Fixed wording shown on every report page.
+        options:
+          preview:
+            icon: article
+      report.label:
+        type: text
+        label: Label above the title
+      report.author_label:
+        type: text
+        label: Author label
+      report.back_label:
+        type: text
+        label: Back button label
+  - glob: src/data/navigation.json
+    _inputs:
+      $:
+        type: object
+        options:
+          preview:
+            icon: menu
+      items:
+        type: array
+        label: Navigation links
+        comment: Shown in the header, the mobile menu and the footer.
+        options:
+          structures: _structures.nav_items
+      cta:
+        type: object
+        label: Header button
+        options:
+          preview:
+            icon: ads_click
+      cta.label:
+        type: text
+        label: Button label
+      cta.url:
+        type: url
+        label: Button link
+  - glob: src/data/footer.json
+    _inputs:
+      $:
+        type: object
+        options:
+          preview:
+            icon: bottom_navigation
+      company_heading:
+        type: text
+        label: Company details heading
+      company_description:
+        type: textarea
+        label: Company description
+      phone:
+        type: text
+        label: Phone number
+      email:
+        type: email
+        label: Email address
+      copyright:
+        type: text
+        label: Copyright line
+      legal_links:
+        type: array
+        label: Legal links
+        comment: Shown at the bottom of every page.
+        options:
+          structures: _structures.legal_links
+_inputs:
+  _uuid:
+    type: text
+    hidden: true
+    instance_value: UUID
+  _type:
+    hidden: true
+  _schema:
+    hidden: true
+_editables:
+  content:
+    format: p h2 h3 h4
+    bold: true
+    italic: true
+    strike: true
+    link: true
+    bulletedlist: true
+    numberedlist: true
+    blockquote: true
+    image: true
+    removeformat: true
+    undo: true
+    redo: true
+_structures:
+  content_blocks:
+    style: modal
+    values_from_glob:
+      - /src/components/blocks/*.cloudcannon.structure-value.yml
+  button:
+    values:
+      - label: Button
+        icon: ads_click
+        picker_preview:
+          text:
+            - Button
+          icon:
+            - ads_click
+        preview:
+          text:
+            - key: label
+            - Button
+          subtext:
+            - key: url
+          icon:
+            - ads_click
+        value:
+          label: Become a Member
+          style: primary
+          url: "#"
+        _inputs:
+          label:
+            type: text
+            label: Label
+          style:
+            type: select
+            label: Style
+            options:
+              value_key: id
+              preview:
+                text:
+                  - key: name
+              values:
+                - name: Primary (brand colour)
+                  id: primary
+                - name: Secondary (light)
+                  id: secondary
+          url:
+            type: url
+            label: Link
+  heading:
+    values:
+      - label: Heading badge
+        icon: label
+        picker_preview:
+          text:
+            - Heading badge
+          icon:
+            - label
+        preview:
+          text:
+            - key: title
+            - Heading badge
+          icon:
+            - label
+        value:
+          title: Membership
+          icon:
+          style: default
+        _inputs:
+          title:
+            type: text
+            cascade: false
+            label: Text
+          icon:
+            type: image
+            label: Icon
+            comment: A small white SVG, shown at 25 x 25 pixels on a brand-colour square.
+          style:
+            type: select
+            label: Style
+            options:
+              value_key: id
+              preview:
+                text:
+                  - key: name
+              values:
+                - name: Plain (for light backgrounds)
+                  id: default
+                - name: Glass (for image backgrounds)
+                  id: glass
+  partners_section:
+    values:
+      - label: Partner logos
+        icon: handshake
+        picker_preview:
+          text:
+            - Partner logos
+          icon:
+            - handshake
+        preview:
+          text:
+            - key: title
+            - Partner logos
+          icon:
+            - handshake
+        value:
+          title:
+          partners: []
+        _inputs:
+          title:
+            type: text
+            cascade: false
+            label: Title
+          partners:
+            type: array
+            cascade: false
+            label: Partners
+            options:
+              structures: _structures.partners
+  partners:
+    style: modal
+    values:
+      - label: Partner
+        icon: handshake
+        picker_preview:
+          text:
+            - Partner
+          icon:
+            - handshake
+        preview:
+          text:
+            - key: name
+            - Partner
+          image:
+            - key: logo
+          icon:
+            - handshake
+        value:
+          _uuid:
+          name:
+          logo:
+          link: "#"
+        _inputs:
+          name:
+            type: text
+            label: Name
+            comment: Used as the alt text of the logo.
+          logo:
+            type: image
+            label: Logo
+            comment: A light SVG, shown 24 pixels high on the hero image.
+          link:
+            type: url
+            label: Link
+  features:
+    style: modal
+    values:
+      - label: Feature
+        icon: star
+        picker_preview:
+          text:
+            - Feature
+          icon:
+            - star
+        preview:
+          text:
+            - key: title
+            - Feature
+          image:
+            - key: image.src
+          icon:
+            - star
+        value:
+          _uuid:
+          title:
+          image:
+            src:
+            alt:
+          description:
+        _inputs_from_glob:
+          - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+        _inputs:
+          title:
+            type: text
+            cascade: false
+            label: Title
+          description:
+            type: textarea
+            label: Description
+  stats:
+    style: modal
+    values:
+      - label: Stat
+        icon: bar_chart
+        picker_preview:
+          text:
+            - Stat
+          icon:
+            - bar_chart
+        preview:
+          text:
+            - key: number
+            - Stat
+          subtext:
+            - key: label
+          icon:
+            - bar_chart
+        value:
+          _uuid:
+          number:
+          label:
+          primary: false
+        _inputs:
+          number:
+            type: text
+            label: Number
+            comment: The large figure, such as 98% or 2.5M.
+          label:
+            type: text
+            label: Label
+          primary:
+            type: switch
+            label: Highlight
+            comment: Shows this stat on the brand colour.
+  testimonials:
+    style: modal
+    values:
+      - label: Testimonial
+        icon: format_quote
+        picker_preview:
+          text:
+            - Testimonial
+          icon:
+            - format_quote
+        preview:
+          text:
+            - key: author_name
+            - Testimonial
+          subtext:
+            - key: quote
+          icon:
+            - format_quote
+        value:
+          _uuid:
+          quote:
+          author_name:
+          author_title:
+        _inputs:
+          quote:
+            type: textarea
+            label: Quote
+            comment: Quotation marks are added automatically.
+          author_name:
+            type: text
+            label: Author name
+          author_title:
+            type: text
+            label: Author job title
+  members:
+    style: modal
+    values:
+      - label: Team member
+        icon: person
+        picker_preview:
+          text:
+            - Team member
+          icon:
+            - person
+        preview:
+          text:
+            - key: name
+            - Team member
+          subtext:
+            - key: role
+          image:
+            - key: image.src
+          icon:
+            - person
+        value:
+          _uuid:
+          image:
+            src:
+            alt:
+          name:
+          role:
+          link: "#"
+        _inputs_from_glob:
+          - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+        _inputs:
+          name:
+            type: text
+            label: Name
+          role:
+            type: text
+            label: Role
+          link:
+            type: url
+            label: Link
+            comment: Where the arrow on the photo goes.
+  advisers:
+    style: modal
+    values:
+      - label: Adviser
+        icon: person
+        picker_preview:
+          text:
+            - Adviser
+          icon:
+            - person
+        preview:
+          text:
+            - key: name
+            - Adviser
+          subtext:
+            - key: role
+          image:
+            - key: image.src
+          icon:
+            - person
+        value:
+          _uuid:
+          image:
+            src:
+            alt:
+          name:
+          role:
+          description:
+          link: "#"
+        _inputs_from_glob:
+          - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+        _inputs:
+          name:
+            type: text
+            label: Name
+          role:
+            type: text
+            label: Role
+          description:
+            type: textarea
+            label: Description
+          link:
+            type: url
+            label: Link
+            comment: Where the arrow at the end of the row goes.
+  nav_items:
+    style: modal
+    values:
+      - label: Navigation link
+        icon: link
+        picker_preview:
+          text:
+            - Navigation link
+          icon:
+            - link
+        preview:
+          text:
+            - key: label
+            - Navigation link
+          subtext:
+            - key: url
+          icon:
+            - link
+        value:
+          _uuid:
+          label:
+          url:
+        _inputs:
+          label:
+            type: text
+            label: Label
+          url:
+            type: url
+            label: Link
+  legal_links:
+    style: modal
+    values:
+      - label: Legal link
+        icon: gavel
+        picker_preview:
+          text:
+            - Legal link
+          icon:
+            - gavel
+        preview:
+          text:
+            - key: label
+            - Legal link
+          subtext:
+            - key: url
+          icon:
+            - gavel
+        value:
+          _uuid:
+          label:
+          url:
+        _inputs:
+          label:
+            type: text
+            label: Label
+          url:
+            type: url
+            label: Link

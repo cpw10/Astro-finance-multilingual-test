@@ -1,0 +1,24 @@
+---
+import PartnerItem from './items/PartnerItem.astro'
+
+// Only the hero renders this, from its `partners` object, so the editable paths are fixed.
+const { title, partners } = Astro.props
+---
+
+<div class="flex flex-col md:flex-row gap-8 items-center justify-between w-full py-16">
+  {title && <h2 class="text-white shrink-0" data-editable="text" data-prop="partners.title" data-rosey="partners_title">{title}</h2>}
+
+  <ul
+    class="grid grid-cols-2 sm:grid-cols-5 gap-x-5 gap-y-10"
+    data-editable="array"
+    data-prop="partners.partners"
+    data-component="partner_item"
+    data-direction="row"
+  >
+    {partners?.map((partner) => (
+      <li data-editable="array-item" data-component="partner_item">
+        <PartnerItem {...partner} />
+      </li>
+    ))}
+  </ul>
+</div>

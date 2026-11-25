@@ -1,34 +1,35 @@
 ---
-import { getPayload, StoryblokPreview } from '@storyblok/astro'
-import { getStory, getSiteSettings } from '../utils/api'
-import { StoryblokBlock } from '../storyblok/index.js'
+import { getCollection } from 'astro:content'
 import Layout from '../layouts/Layout.astro'
-import parseUrl from '../utils/parseUrl'
-import isPreview from '../utils/isPreview'
-import generateStaticPaths from '../utils/generateStaticPaths'
-import * as locales from '../locales'
+import BlockRenderer from '../components/BlockRenderer.astro'
 
+// One route for every entry in src/content/pages. `index.md` is the home page.
 export async function getStaticPaths() {
-  return await generateStaticPaths()
+  const pages = await getCollection('pages')
+  return pages.map((page) => ({
+    params: { slug: page.id === 'index' ? undefined : page.id },
+    props: { page },
+  }))
 }
 
-const params = Astro.params
-
-let props = isPreview() ? parseUrl(params.slug) : Astro.props
-
-const { slug, language, langSwitch } = props
-
-const siteSettings = await getSiteSettings(language)
-
-const translate = locales[language] || locales.en
-
-// During a Visual Editor live update, render the edited story instead of fetching it
-const payload = await getPayload({ locals: Astro.locals })
-const story = payload.story ?? (await getStory(slug, language))
+const { page } = Astro.props
+const { title, metatags, content_blocks } = page.data
+// Namespace of this page's translation keys (Rosey). It comes from the file name, not the URL.
+const roseyRoot = page.id
 ---
 
-<Layout blok={story.content} siteSettings={siteSettings.content} langSwitch={langSwitch} language={language} translate={translate}>
-  <StoryblokBlock block={story.content} language={language} translate={translate} />
-  <!-- Reloads on save in the Visual Editor; live updates while typing need an on-demand route -->
-  <StoryblokPreview liveUpdate={!Astro.isPrerendered} bridgeOptions={{ resolveRelations: ['reports_section.reports'] }} />
+<Layout title={title} metatags={metatags} roseyRoot={roseyRoot}>
+  <main
+    class="has-[>*:nth-child(3)]:space-y-16 has-[>*:nth-child(3)]:md:space-y-32"
+    data-editable="array"
+    data-prop="content_blocks"
+    data-component-key="_type"
+    data-rosey-root={roseyRoot}
+  >
+    {content_blocks?.map((block) => (
+      <div data-editable="array-item" data-component={block._type}>
+        <BlockRenderer {...block} />
+      </div>
+    ))}
+  </main>
 </Layout>

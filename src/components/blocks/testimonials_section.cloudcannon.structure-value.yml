@@ -1,0 +1,57 @@
+label: Testimonials
+description: A photo beside one or more customer quotes.
+icon: format_quote
+picker_preview:
+  text:
+    - Testimonials
+  icon:
+    - format_quote
+preview:
+  text:
+    - key: heading.title
+    - Testimonials
+  image:
+    - key: image.src
+  icon:
+    - format_quote
+value:
+  _type: testimonials_section
+  _uuid:
+  image:
+    src:
+    alt:
+  heading:
+    title: Membership
+    icon:
+    style: default
+  testimonials: []
+  headline:
+  button:
+_inputs_from_glob:
+  - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+_inputs:
+  heading:
+    type: object
+    label: Heading badge
+    comment: The small badge with an icon. Remove it to hide it.
+    options:
+      structures: _structures.heading
+      preview:
+        icon: label
+  testimonials:
+    type: array
+    label: Testimonials
+    options:
+      structures: _structures.testimonials
+  headline:
+    type: text
+    label: Headline below the card
+    comment: Optional. White text, so it only shows when the section sits on a dark background.
+  button:
+    type: object
+    label: Button
+    comment: Remove the button to hide it.
+    options:
+      structures: _structures.button
+      preview:
+        icon: ads_click

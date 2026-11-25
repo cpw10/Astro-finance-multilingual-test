@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets'
+import { Card } from '@/components/ui/card'
+import Button from '@/components/Button.astro'
+import Heading from '@/components/Heading.astro'
+import TestimonialItem from '@/components/items/TestimonialItem.astro'
+import { flatCard } from '@/lib/ui'
+import { resolveImage } from '@/lib/images'
+
+const { _uuid, image, heading, testimonials, headline, button } = Astro.props
+const imageSrc = resolveImage(image?.src)
+---
+
+<section data-rosey-ns={_uuid}>
+  <div class="container mx-auto px-6">
+    <Card class:list={[flatCard, 'grid gap-16 p-16 md:grid-cols-2']}>
+      <div class="pt-12 pl-12 bg-primary self-start">
+        {imageSrc && (
+          <Image
+            src={imageSrc}
+            alt={image?.alt ?? ''}
+            width={405}
+            height={494}
+            layout="full-width"
+            loading="lazy"
+            class="rounded-tl-xl"
+            data-editable="image"
+            data-prop="image"
+          />
+        )}
+      </div>
+      <div class="flex flex-col justify-between items-start gap-8">
+        {heading?.title && (
+          <Heading title={heading.title} icon={heading.icon} variant={heading.style} />
+        )}
+        <ul data-editable="array" data-prop="testimonials" data-component="testimonial_item">
+          {testimonials?.map((testimonial) => (
+            <li data-editable="array-item" data-component="testimonial_item">
+              <TestimonialItem {...testimonial} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Card>
+
+    {(headline || button?.label?.trim()) && (
+      <div class="max-w-[474px]">
+        {headline && <h2 class="text-white text-3xl md:text-5xl leading-[120%] font-heading mb-10" data-editable="text" data-prop="headline" data-rosey="headline">{headline}</h2>}
+        {button?.label?.trim() && (
+          <Button label={button.label} href={button.url} variant={button.style} labelProp="button.label" />
+        )}
+      </div>
+    )}
+  </div>
+</section>

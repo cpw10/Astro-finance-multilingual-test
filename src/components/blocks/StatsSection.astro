@@ -1,0 +1,28 @@
+---
+import StatItem from '@/components/items/StatItem.astro'
+
+const { _uuid, title, lead, stats } = Astro.props
+---
+
+<section data-rosey-ns={_uuid}>
+  <div class="container mx-auto px-6">
+    {title && <h3 class="text-black text-3xl md:text-5xl leading-[120%] font-heading mb-4 max-w-[580px]" data-editable="text" data-prop="title" data-rosey="title">{title}</h3>}
+    {lead && <p class="mb-8 text-black opacity-65" data-editable="text" data-prop="lead" data-rosey="lead">{lead}</p>}
+  </div>
+
+  <div class="container mx-auto px-6">
+    <ul
+      class="grid grid-cols-1 md:grid-cols-4 gap-5"
+      data-editable="array"
+      data-prop="stats"
+      data-component="stat_item"
+      data-direction="row"
+    >
+      {stats?.map((stat) => (
+        <li data-editable="array-item" data-component="stat_item">
+          <StatItem {...stat} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

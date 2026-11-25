@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "_uuid": "f31f10de-c3ad-48e9-a481-f7ed86551b4a",
+      "label": "Platform",
+      "url": "#"
+    },
+    {
+      "_uuid": "4277a1ec-e86e-431c-ae68-8e972926ad88",
+      "label": "Membership",
+      "url": "#"
+    },
+    {
+      "_uuid": "83e343ad-a53d-40e1-85a9-f6ca1a69a3bf",
+      "label": "Reports",
+      "url": "/report/"
+    },
+    {
+      "_uuid": "c02d14f8-fc3e-4cc4-888e-0562a132fde6",
+      "label": "Team",
+      "url": "#"
+    }
+  ],
+  "cta": {
+    "label": "Become a Member",
+    "url": "#"
+  }
+}

@@ -1,0 +1,50 @@
+label: Featured reports
+description: A hand-picked selection of reports on a dark background.
+icon: library_books
+picker_preview:
+  text:
+    - Featured reports
+  icon:
+    - library_books
+preview:
+  text:
+    - key: title
+    - Featured reports
+  icon:
+    - library_books
+value:
+  _type: reports_section
+  _uuid:
+  title:
+  reports: []
+  button:
+    label: Become a Member
+    style: primary
+    url: "#"
+_inputs:
+  title:
+    type: text
+    cascade: false
+    label: Title
+  reports:
+    type: multiselect
+    label: Reports
+    comment: Pick the reports to show, in order. Three fill one row.
+    options:
+      values: collections.reports
+      value_key: filename_without_ext
+      preview:
+        text:
+          - key: title
+        subtext:
+          - key: author
+        icon:
+          - article
+  button:
+    type: object
+    label: Button
+    comment: Remove the button to hide it.
+    options:
+      structures: _structures.button
+      preview:
+        icon: ads_click

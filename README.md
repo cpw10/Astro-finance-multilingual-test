@@ -1,99 +1,76 @@
-# Financial Starter: Multilingual Website Template
-
-![Financial Template Preview](https://a.storyblok.com/f/286134095425736/1920x1080/8a2b82127e/template-image.png)
+# Financial Starter: Website Template
 
 A high-performance website starter template built for financial teams to launch new brands, products, or campaigns quickly and efficiently.
 
-This template is powered by a modern, headless stack: Astro, Storyblok, Netlify, and PostHog. Together, they provide a flexible, scalable solution with intuitive content management and powerful marketing features like A/B testing.
-
-## Demo
-- ✨ [Live Demo](https://astro-storyblok-finance-starter.netlify.app/)
-- 💨 [PageSpeed Insights Report](https://pagespeed.web.dev/analysis/https-astro-storyblok-template-netlify-app/04ge88qxbi?form_factor=desktop)
-- 🍿 [Watch Demo on YouTube](https://www.youtube.com/watch?v=2hPhwubis7Q)
-- 🆎 [A/B testing with PostHog](https://posthog-finance-starter.netlify.app/)
-  - [Check out its branch](https://github.com/bejamas/astro-storyblok-finance-starter/tree/with-posthog-ab-testing)
+This is a fork of [bejamas/astro-storyblok-finance-starter](https://github.com/bejamas/astro-storyblok-finance-starter). The original fetched its content from Storyblok; this fork keeps all content in the repository as Markdown and JSON, builds to static HTML, and is set up for editing in [CloudCannon](https://cloudcannon.com).
 
 ## Tech Stack
-- Astro v7 🚀
-- Storyblok
-- Netlify
-- PostHog
+- Astro v7 (static output)
+- CloudCannon (Git-based CMS)
 - Tailwind v4
 - [bejamas/ui](https://ui.bejamas.com) components with [@data-slot](https://data-slot.com) primitives
 
 ## Features
-- ✅ Modular Content Model – Hero, features, stats, testimonials, and more
-- ✅ Financial Reports – Built-in report content type + report list page
-- ✅ Multilingual by Default – Easy language switching with optional AI translation
-- ✅ Visual Editing – Storyblok’s live preview & block-based approach
-- ✅ SEO Ready – Metadata fields on every page
-- ✅ Optimized Performance – Static output, responsive images, Core Web Vitals ready
-- ✅ A/B Testing – Integrated with PostHog for experiments
+- Modular content model: hero, features, stats, testimonials, and more, assembled per page
+- Financial reports: a report content type plus a report list page
+- SEO fields on every page and report
+- Static output with build-time image optimisation
 
+The site is published in English (at `/`) and Spanish (at `/es/`). Pages are written once, in English. [Rosey](https://rosey.app) builds the Spanish pages after the Astro build from the translations in `rosey/locales/es.json`; see `.cloudcannon/migration/multilingual.md`.
 
-## Quick Start
-1. Create a Storyblok account and a new Space
-2. Clone Storyblok Space (using the button below)
-3. Fork this repo
-4. Create your project on Netlify
-5. Set up environment variables (see below)
-6. Deploy!
+## Content
 
-[![Clone Storyblok Space](https://a.storyblok.com/f/286134095425736/208x35/7a54d39bad/clone-button.svg)](https://storyblok-space-cloner.netlify.app/)
+| What | Where |
+| --- | --- |
+| Pages (home, campaign pages, reports index) | `src/content/pages/*.md` — front matter only; sections live in `content_blocks` |
+| Reports | `src/content/reports/*.md` — front matter plus a Markdown body |
+| Logo, brand colour, report labels | `src/data/site.json` |
+| Header navigation and button | `src/data/navigation.json` |
+| Footer | `src/data/footer.json` |
+| Photos (optimised at build time) | `src/assets/images/` |
+| Logos, icons, share images (served as-is) | `public/images/` |
+
+Each section type has a component in `src/components/blocks/` next to its CloudCannon structure file. `src/cloudcannon/componentMap.ts` maps a section's `_type` to its component, and `src/content.config.ts` holds the content schemas.
 
 ## Local Setup
 
 ### Prerequisites
 - Node.js 22.23.4 or newer
-- Bun
+- npm
 
 ### Getting Started
 ```bash
-# Install dependencies
-bun install
-
-# Set up environment variables
-cp .env.example .env
+npm install
 ```
 
-### Environment Variables
-```bash
-STORYBLOK_TOKEN=        # Storyblok API token (Project Settings > Access token)
-STORYBLOK_IS_PREVIEW=   # "yes" for preview mode
-STORYBLOK_ENVIRONMENT=  # set to development on your local machine
-STORYBLOK_DEFAULT_LANG= # Default site language code, like en or es
-PUBLIC_POSTHOG_TOKEN=   # PostHog API key (Project Settings > Project ID)
-```
+No environment variables are needed.
 
 ## Available Scripts
 ```bash
 # Run development server
-bun dev
+npm run dev
 
-# Build for production
-bun run build
+# Build the English pages only
+npm run build
+
+# Build for production: English, then the Spanish pages (what CloudCannon runs)
+npm run build:translated
 
 # Preview production build
-bun run preview
+npm run preview
 ```
 
 ## UI Components
-The UI is built on [bejamas/ui](https://ui.bejamas.com): Astro components copied into `src/components/ui`, with interactive behavior (mobile navigation, language menu) provided by [@data-slot](https://data-slot.com) primitives.
+The UI is built on [bejamas/ui](https://ui.bejamas.com): Astro components copied into `src/components/ui`, with interactive behavior (mobile navigation, language switcher) provided by [@data-slot](https://data-slot.com) primitives.
 
 ```bash
 # Add another component
-bunx bejamas@latest add accordion
+npx bejamas@latest add accordion
 ```
 
-- Design tokens (`--primary`, `--background`, …) live in `src/styles/global.css`.
+- Design tokens (`--primary`, `--background`, …) live in `src/styles/global.css`. The brand colour in `src/data/site.json` overrides `--primary`.
 - `bejamas add` re-inserts a global `* { border-border outline-ring/50 }` rule into `global.css`. This template scopes that rule to `[data-slot]`, so remove the re-inserted copy after adding a component.
 - Blocks reset the component defaults they don't use through the shared classes in `src/lib/ui.ts`.
 
 ## Contributing
 Contributions are welcome!
-
-## 📸 Screenshots
-![Financial Template Preview](https://a.storyblok.com/f/286134095425736/3840x2160/0da3abc8e2/2.png)
-![Financial Template Preview](https://a.storyblok.com/f/286134095425736/3840x2160/70e9404911/4.png)
-![Financial Template Preview](https://a.storyblok.com/f/286134095425736/3840x2160/9913515548/5.png)
-![Financial Template Preview](https://a.storyblok.com/f/286134095425736/3840x2160/10957f2691/3.png)

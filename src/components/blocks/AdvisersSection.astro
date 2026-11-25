@@ -1,0 +1,19 @@
+---
+import AdviserItem from '@/components/items/AdviserItem.astro'
+
+const { _uuid, title, advisers } = Astro.props
+---
+
+<section data-rosey-ns={_uuid}>
+  <div class="container mx-auto px-6">
+    {title && <h2 class="text-black text-3xl md:text-5xl leading-[120%] font-heading mb-8 px-6 max-w-[430px]" data-editable="text" data-prop="title" data-rosey="title">{title}</h2>}
+
+    <ul class="space-y-3" data-editable="array" data-prop="advisers" data-component="adviser_item">
+      {advisers?.map((adviser) => (
+        <li data-editable="array-item" data-component="adviser_item">
+          <AdviserItem {...adviser} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,54 @@
+label: Hero
+description: Full-width photo with a headline, an optional button and optional partner logos.
+icon: panorama
+picker_preview:
+  text:
+    - Hero
+  icon:
+    - panorama
+preview:
+  text:
+    - key: headline
+    - Hero
+  image:
+    - key: image.src
+  icon:
+    - panorama
+value:
+  _type: hero
+  _uuid:
+  image:
+    src:
+    alt:
+  headline:
+  lead:
+  button:
+    label: Become a Member
+    style: primary
+    url: "#"
+  partners:
+_inputs_from_glob:
+  - /.cloudcannon/inputs/optimized-image.cloudcannon.inputs.yml
+_inputs:
+  headline:
+    type: text
+    label: Headline
+  lead:
+    type: textarea
+    label: Lead text
+  button:
+    type: object
+    label: Button
+    comment: Remove the button to hide it.
+    options:
+      structures: _structures.button
+      preview:
+        icon: ads_click
+  partners:
+    type: object
+    label: Partner logos
+    comment: A row of partner logos at the bottom of the hero. Remove it to hide it.
+    options:
+      structures: _structures.partners_section
+      preview:
+        icon: handshake

@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets'
+import { Avatar } from '@/components/ui/avatar'
+import { Card } from '@/components/ui/card'
+import ArrowLink from '@/components/ArrowLink.astro'
+import { flatCard } from '@/lib/ui'
+import { resolveImage } from '@/lib/images'
+
+// One row of the advisers block. Rendered on its own so the Visual Editor can re-render a single item.
+// `_uuid` namespaces this item's Rosey translation keys, so they survive a reorder.
+const { _uuid, image, name, role, description, link } = Astro.props
+const imageSrc = resolveImage(image?.src)
+---
+
+<Card data-rosey-ns={_uuid} class:list={[flatCard, 'flex-row flex-wrap items-center justify-center gap-5 p-10 sm:justify-between']}>
+  <div class="flex flex-col sm:flex-row items-center gap-4">
+    <Avatar class="size-16">
+      {imageSrc && (
+        <Image
+          data-slot="avatar-image"
+          class="size-full rounded-full object-cover"
+          src={imageSrc}
+          alt={image?.alt ?? ''}
+          width={64}
+          height={64}
+          loading="lazy"
+          data-editable="image"
+          data-prop="image"
+        />
+      )}
+    </Avatar>
+    <div>
+      <h3 class="mb-2 text-[1.5rem] md:text-[1.75rem] text-center sm:text-left" data-editable="text" data-prop="name">{name}</h3>
+      <p class="opacity-65 text-center sm:text-left" data-editable="text" data-prop="role" data-rosey="role">{role}</p>
+    </div>
+  </div>
+  <p class="max-w-96 opacity-65" data-editable="text" data-prop="description" data-rosey="description">{description}</p>
+  <ArrowLink href={link || '#'} class="ml-auto" />
+</Card>

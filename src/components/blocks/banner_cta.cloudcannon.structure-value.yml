@@ -1,0 +1,51 @@
+label: Call to action banner
+description: A tall background image with a heading badge, a headline and a button.
+icon: campaign
+picker_preview:
+  text:
+    - Call to action banner
+  icon:
+    - campaign
+preview:
+  text:
+    - key: headline
+    - Call to action banner
+  image:
+    - key: image
+  icon:
+    - campaign
+value:
+  _type: banner_cta
+  _uuid:
+  image:
+  heading:
+    title: Membership
+    icon:
+    style: default
+  headline:
+  button:
+    label: Become a Member
+    style: primary
+    url: "#"
+_inputs_from_glob:
+  - /.cloudcannon/inputs/background-image.cloudcannon.inputs.yml
+_inputs:
+  heading:
+    type: object
+    label: Heading badge
+    comment: The small badge with an icon. Remove it to hide it.
+    options:
+      structures: _structures.heading
+      preview:
+        icon: label
+  headline:
+    type: text
+    label: Headline
+  button:
+    type: object
+    label: Button
+    comment: Remove the button to hide it.
+    options:
+      structures: _structures.button
+      preview:
+        icon: ads_click

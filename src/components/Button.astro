@@ -1,9 +1,14 @@
 ---
 import { Button } from '@/components/ui/button'
+import { resolveRosey } from '@/lib/rosey'
 
-const { label, href, variant = 'primary', classes } = Astro.props
+// `labelProp` is the data path of the label (e.g. `button.label`); it makes the label editable in place.
+// The label's translation key is derived from it (`button_label`). `data-rosey` overrides the key,
+// and `roseyRoot` replaces the surrounding namespace for a label shared by many pages.
+const { label, href, variant, classes, labelProp, 'data-rosey': roseyKey, roseyRoot } = Astro.props
+const rosey = resolveRosey(roseyKey, labelProp)
 
-// Storyblok's button styles mapped to bejamas/ui Button variants
+// Content button styles mapped to bejamas/ui Button variants
 const variants = {
   primary: 'default',
   secondary: 'secondary',
@@ -12,9 +17,9 @@ const variants = {
 
 <Button
   as="a"
-  href={href}
+  href={href || '#'}
   variant={variants[variant] || variants.primary}
   class:list={['h-auto rounded-sm border-0 px-5 py-4 text-center text-base tracking-[-0.64px] whitespace-normal', classes]}
 >
-  {label}
+  {labelProp ? <span data-editable="text" data-prop={labelProp} data-rosey-root={roseyRoot} {...rosey}>{label}</span> : label}
 </Button>

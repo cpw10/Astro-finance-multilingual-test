@@ -1,0 +1,35 @@
+---
+import ReportCard from '@/components/ReportCard.astro'
+import { imageUrl } from '@/lib/images'
+import { getReports, reportFile, reportHref, reportRoseyRoot } from '@/lib/reports'
+
+const { _uuid, image, title, lead } = Astro.props
+const background = await imageUrl(image, { width: 2560 })
+const reports = await getReports()
+---
+
+<section data-rosey-ns={_uuid} class="bg-black">
+
+  <div
+    class="min-h-[44vh] flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center"
+    style={background ? `background-image: url('${background}')` : undefined}
+    >
+    <div class="max-w-[624px] mx-auto px-6 flex flex-col justify-center items-center pt-14">
+      <h1 class="text-white text-3xl md:text-5xl leading-[120%] text-center font-heading mb-4" data-editable="text" data-prop="title" data-rosey="title">{title}</h1>
+
+      {lead && (
+        <p class="text-center text-white opacity-65 leading-[24px]" data-editable="text" data-prop="lead" data-rosey="lead">{lead}</p>
+      )}
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 py-24">
+    <ul class="grid gap-7 grid-cols-1 md:grid-cols-3">
+      {reports.map((report) => (
+        <li>
+          <ReportCard title={report.data.title} image={report.data.image} href={reportHref(report.id)} file={reportFile(report.id)} roseyRoot={reportRoseyRoot(report.id)} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
