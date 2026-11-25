@@ -199,3 +199,7 @@ The work is uncommitted on the local branch `cloudcannon-migration`. It has to b
 For anything that fails: the page URL and what was clicked, a screenshot or the text of any error card, the git diff if a save changed more than expected, and the build log if a build failed (the Node and npm version lines, and the last 30 lines).
 
 When those checks are done, reply with any failures or odd behaviour and the next pass will start from there.
+
+## After the first hosted build
+
+The first CloudCannon build passed (Node 22.23.4, 7 pages, Rosey postbuild ran), but `@cloudcannon/reader` reported `pages`, `reports` and `data` "with no files". Cause: the `glob: ["*.md"]` / `["*.json"]` entries on those three collections. The reader does not match them relative to the collection path, so it listed nothing. The folders are flat and hold only that one file type, so the globs were redundant and have been removed. The reader now lists 3 pages, 4 reports and 3 data files with the expected URLs.

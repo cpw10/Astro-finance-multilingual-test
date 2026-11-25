@@ -27,8 +27,6 @@ collections_config:
     description: Landing pages built from sections, including the home page and the reports index.
     icon: wysiwyg
     url: "/[slug]/"
-    glob:
-      - "*.md"
     disable_add_folder: true
     new_preview_url: /
     _enabled_editors:
@@ -67,8 +65,6 @@ collections_config:
     description: Long-form reports. Each one gets its own page and a card on the reports index.
     icon: article
     url: "/report/[slug]/"
-    glob:
-      - "*.md"
     disable_add_folder: true
     new_preview_url: /report/clarity-over-complexity/
     _enabled_editors:
@@ -127,8 +123,6 @@ collections_config:
     name: Site settings
     description: Content shared by every page - logo, brand colour, navigation and footer.
     icon: settings
-    glob:
-      - "*.json"
     disable_url: true
     disable_add: true
     disable_add_folder: true
